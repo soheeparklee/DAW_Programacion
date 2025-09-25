@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Ejercicio2_20 {
     public static void main(String[] args) {
         //11. Comparar tres números
+        //solution_1
 /*
 
         Scanner sc = new Scanner(System.in);
@@ -26,6 +27,21 @@ public class Ejercicio2_20 {
             System.out.println("Comparación entre primer y segundo número: 1");
         }
 */
+        //solution_2
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce el primer número: ");
+        Integer numero1 = Integer.parseInt(sc.nextLine());
+        System.out.println("Introduce el segundo número: ");
+        Integer numero2 = Integer.parseInt(sc.nextLine());
+        System.out.println("Introduce el tercer número: ");
+        Integer numero3 = Integer.parseInt(sc.nextLine());
+
+        int result = numero1 > numero2 ? 1 : numero1 == numero2 ? 0 : -1;
+        System.out.println("Resultos de comparación: " + result);
+        result = numero1 > numero3 ? 1 : numero1 == numero3 ? 0 : -1;
+        System.out.println("Resultos de comparación: " + result);
+        result = numero2 > numero3 ? 1 : numero2 == numero3 ? 0 : -1;
+        System.out.println("Resultos de comparación: " + result);
 
 
         //12. Convertir una temperatura de Celsius a Fahrenheit y viceversa
@@ -132,6 +148,7 @@ public class Ejercicio2_20 {
 */
 
         //Scanner
+/*
         Scanner sc = new Scanner(System.in);
         System.out.println("Dame un número: ");
         int iNumero = sc.nextInt();
@@ -139,6 +156,7 @@ public class Ejercicio2_20 {
         System.out.println("Dame un segundo número: ");
         double dNumero = sc.nextDouble();
         System.out.println("segundo" + dNumero);
+*/
 
     }
 }
