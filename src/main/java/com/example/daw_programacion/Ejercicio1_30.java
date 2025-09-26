@@ -1,8 +1,6 @@
 package com.example.daw_programacion;
 
-import java.util.Scanner;
-
-public class Ejercicio2_30 {
+public class Ejercicio1_30 {
     public static void main(String[] args) {
         //21. ¿Qué sucederá?
         // Porque este pasa?

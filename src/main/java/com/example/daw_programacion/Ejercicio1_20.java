@@ -1,7 +1,7 @@
 package com.example.daw_programacion;
 import java.util.Scanner;
 
-public class Ejercicio2_20 {
+public class Ejercicio1_20 {
     public static void main(String[] args) {
         //11. Comparar tres números
         //solution_1

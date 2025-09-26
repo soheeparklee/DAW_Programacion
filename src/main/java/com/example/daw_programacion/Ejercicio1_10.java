@@ -2,7 +2,7 @@ package com.example.daw_programacion;
 
 import java.util.Scanner;
 
-public class Ejercicio2_10 {
+public class Ejercicio1_10 {
     public static void main(String[] args) {
         //1. Calcular el cuadrado
 /*
