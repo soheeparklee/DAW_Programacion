@@ -52,7 +52,17 @@ public class Ejercicio2_30 {
 */
 
         //23. Análisis de Ventas Semanales
+        double lunes = 1500.75;
+        double martes = 1300.30;
+        double miercoles = 1100.57;
 
+        double totalDeVentas = lunes + martes + miercoles;
+        double porLunes = lunes / totalDeVentas * 100;
+        double porMartes = martes / totalDeVentas * 100;
+        double porMiercoles = miercoles / totalDeVentas * 100;
+        double totalIva= totalDeVentas * (1-0.21);
+        double totalDescuentos = lunes * 0.9 + martes * 0.85 + lunes * 0.95;
+        double diferencia = totalDeVentas - totalDescuentos;
 
     }
 }
