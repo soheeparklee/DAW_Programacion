@@ -1,5 +1,7 @@
 package com.example.daw_programacion;
 
+import java.util.Scanner;
+
 public class Ejercicio2_estructuras {
     public static void main(String[] args) {
         //Estructura if
@@ -104,8 +106,28 @@ public class Ejercicio2_estructuras {
         }
 */
         //7. Lea un número y devuela binaria
+/*
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Input decimal number: ");
+        int decimal = sc.nextInt();
+        StringBuffer binary = new StringBuffer();
 
 
+        while(decimal >= 2){
+            if(decimal % 2 == 0){
+        binary.append("0");
+                decimal /= 2;
+            }else{
+                binary.append("1");
+                decimal /= 2;
+            }
+        }
+        binary.append(decimal);
+        binary.reverse();
+        System.out.println("binary: "+ binary);
+*/
+
+        //8. Transforma for en while
 
     }
 }

@@ -1,8 +1,12 @@
 package com.example.daw_programacion;
 
+import java.lang.annotation.Target;
+import java.util.Scanner;
+
 public class Ejercicio2_switch {
     public static void main(String[] args) {
-
+        //1. Switch
+        /*
         Day today = Day.WEDNESDAY; //enum class.value
         int dayValue = Day.WEDNESDAY.getDayValue();
 
@@ -32,5 +36,47 @@ public class Ejercicio2_switch {
                 System.out.println("This is not a day of the week");
                 break;
         }
+*/
+
+        //2. Several cases of switch
+/*        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine().toUpperCase();
+
+        Day[] days = Day.values();
+        for(int i=0; i<days.length; i++){
+            if(days[i].equals(input)) throw new IllegalStateException();
+        }
+
+        Day today = Day.valueOf(input);
+        int dayValue = today.getDayValue();
+
+        switch(today){
+            case MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY:
+                System.out.println("today is working day " + dayValue);
+                break;
+            case SATURDAY, SUNDAY:
+                System.out.println("today is weekend " + dayValue);
+                break;
+            default:
+                System.out.println("This is not a day of the week");
+                break;
+        }
+        */
+
+        //3. Switch yield
+        int day = 3;
+        String dayName = switch(day){
+            case 1 -> "Monday";
+            case 2 -> "Tuesday";
+            case 3 -> {
+                System.out.println("Processing day 3");
+                yield "Wednesday";
+            }
+            case 4 -> "Thursday";
+            default -> "Unknown day";
+        };
+
+        System.out.println("Day is " + dayName);
+
     }
 }
