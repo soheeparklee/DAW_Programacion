@@ -128,6 +128,62 @@ public class Ejercicio2_estructuras {
 */
 
         //8. Transforma for en while
+/*        int i = 5;
+        while(i<15){
+            System.out.println(i);
+            i++;
+        }
+        */
+
+        //9. Pedir al usuario cinco cadenas de texto y generar una sola cadena uniéndolas todas
+/*
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Te pido cinco cadenas de texto: ");
+        String primero = sc.nextLine();
+        String segundo = sc.nextLine();
+        String trecero = sc.nextLine();
+        String quarto = sc.nextLine();
+        String quinto = sc.nextLine();
+
+        System.out.println(primero + segundo + trecero + quarto + quinto);
+*/
+        //10. Se deja pedir cuando la cantidad supera el valor 50
+/*
+        Scanner sc = new Scanner(System.in);
+
+        int i = 0;
+        while( i < 50){
+            System.out.println("Te pido un numero: ");
+            int input = sc.nextInt();
+            i += input;
+            if( i > 50) {
+                System.out.println("La suma supera el valor 50. Suma: " + i);
+                break;
+            }
+            System.out.println("Suma: " + i);
+        }
+*/
+        //11. Escribir *
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Numero a entre el 1 y el 10: ");
+        int a = sc.nextInt();
+        System.out.println("Numero b entre el 1 y el 10: ");
+        int b = sc.nextInt();
+
+        boolean bool = true;
+        while (bool){
+            if(a < b){
+                System.out.println("*");
+            }else if(b < a){
+                System.out.println("*");
+            }else{
+                bool = false;
+            }
+        }
+
+
+
+
 
     }
 }
