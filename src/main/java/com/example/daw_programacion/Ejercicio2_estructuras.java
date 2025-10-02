@@ -115,7 +115,7 @@ public class Ejercicio2_estructuras {
 
         while(decimal >= 2){
             if(decimal % 2 == 0){
-        binary.append("0");
+                binary.append("0");
                 decimal /= 2;
             }else{
                 binary.append("1");
@@ -123,6 +123,11 @@ public class Ejercicio2_estructuras {
             }
         }
         binary.append(decimal);
+
+        while(decimal > 0){
+            binary.append(decimal % 2);
+            decimal /= 2;
+        }
         binary.reverse();
         System.out.println("binary: "+ binary);
 */
@@ -164,26 +169,100 @@ public class Ejercicio2_estructuras {
         }
 */
         //11. Escribir *
+/*
         Scanner sc = new Scanner(System.in);
         System.out.println("Numero a entre el 1 y el 10: ");
         int a = sc.nextInt();
         System.out.println("Numero b entre el 1 y el 10: ");
         int b = sc.nextInt();
 
-        boolean bool = true;
-        while (bool){
+        while( a != b ){
             if(a < b){
                 System.out.println("*");
+                a++;
             }else if(b < a){
                 System.out.println("*");
-            }else{
-                bool = false;
+                b++;
             }
+        }
+        System.out.println("No mas ");
+
+*/
+
+        //12.
+        Scanner sc = new Scanner(System.in);
+        float medio = 0;
+        int sum = 0;
+        int count = 0;
+        boolean bool = false;
+        int input;
+        System.out.println("Primero numero a entre el 1 y el 10: ");
+
+
+        System.out.println("Otro numero entre el 1 y el 10: ");
+
+        while (bool) {
+            do {
+                input = sc.nextInt();
+
+                if (input == 0) {
+                    System.out.println("Has puesto 0. Terminamos.");
+                    bool = false;
+                }
+                if (input > 10 || input < 0) {
+                    System.out.println("No! Solo numero entre el 1 y el 10! ");
+                }
+
+
+            } while (input <= 10 && input >= 1);
+
+    }
+
+/*        if(input <= 10 && input >= 1){
+            bool = true;
+            while(true){
+                count++;
+                sum += input;
+                medio = sum / count;
+                System.out.println("count: "+ count + " sum: " + sum + " input: " + input);
+                System.out.println("medio: "+ medio);
+            }
+        }else if(input == 0){
+
+        }else{
         }
 
 
 
+        while(bool){*/
+/*
+            if(input == 0){
+                System.out.println("Has puesto 0. Terminamos.");
+                bool = false;
+                break;
+            }
+*/
 
 
+
+
+
+        /*while(input !=0) {
+            while (input <= 10 && input >= 1) {
+
+                input = sc.nextInt();
+                sum += input;
+            }
+
+            System.out.println("Te deseas una nueva ejecución?: Pone s o n: ");
+            char respuesta = sc.next().charAt(0);
+            respuesta = respuesta.
+            while (respuesta.equals("s") || respuesta.equals("n")) {
+                System.out.println("Tu respuesta es: " + respuesta);
+                break;
+            }
+        }
+
+        System.out.println("Has puesto 0. Terminamos. ");*/
     }
 }

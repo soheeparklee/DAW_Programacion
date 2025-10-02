@@ -6,6 +6,7 @@ public class Ejercicio2_while {
     public static void main(String[] args) {
 
         //1. Factorial
+/*
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce numero: " );
         int input = sc.nextInt();
@@ -16,5 +17,39 @@ public class Ejercicio2_while {
             input--;
         }
         System.out.println("Resulto: " + resulto);
+*/
+
+        //2. Factorial con for
+/*        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce numero: " );
+        int input = sc.nextInt();
+        int resulto = 1;
+
+        for(int i=1; i<=input; i++){
+            resulto *= i;
+        }
+        System.out.println("Resulto: " + resulto);
+*/
+
+        //3. Contraseña
+        Scanner sc = new Scanner(System.in);
+        char input;
+        int count = 0;
+
+        do{
+            System.out.println("Introduce contraseña: " );
+            input = sc.next().charAt(0);
+            count++;
+
+            if('A' == input){
+                System.out.println("Your password is correct. You are logged in.");
+                break;
+            }
+
+            if(count == 3){
+                System.out.println("Your opportunity is OVER");
+                break;
+            }
+        }while( input != 'A');
     }
 }
