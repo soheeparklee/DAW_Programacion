@@ -95,5 +95,75 @@ public class Ejercicio2_iterativas {
 
         }
 
+        //11. Generar tabla de multiplicar
+        //Solution_1. using while(true)
+/*
+        Scanner sc = new Scanner(System.in);
+
+        while(true){
+            System.out.println("Que tabla de multiplicar quieres?: ");
+            int input = sc.nextInt();
+            System.out.println("------------");
+
+            for(int i=0; i<11; i++){
+                System.out.println(input + " * " + i + " = " + input*i);
+
+            }
+            System.out.println("------------");
+            System.out.println("Quieres generar otra tabla? (s/n)");
+            char respuesto = sc.next().charAt(0);
+            if(respuesta == 's'){
+                continue;
+            }else if (respuesta == 'n'){
+                System.out.println("Hasta Luego! ");
+                break;
+            }
+        }
+*/
+        //Solution_2. using do-while
+/*
+        Scanner sc = new Scanner(System.in);
+        char respuesta;
+
+        do{
+            System.out.println("Que tabla de multiplicar quieres?: ");
+            int input = sc.nextInt();
+            System.out.println("------------");
+
+            for(int i=0; i<11; i++){
+                System.out.println(input + " * " + i + " = " + input*i);
+
+            }
+            System.out.println("------------");
+            System.out.println("Quieres generar otra tabla? (s/n)");
+            respuesta = sc.next().charAt(0);
+
+
+        }while(respuesta == 's' );
+
+        System.out.println("Hasta Luego! ");
+*/
+
+
+        //10. Verificar contraseña.
+/*        Scanner sc = new Scanner(System.in);
+        char contraseña;
+        char respuesta;
+
+        do{
+            System.out.println("Log in con contraseña: ");
+            contraseña = sc.next().charAt(0);
+
+            System.out.println("Quieres salir? (s/n)");
+            respuesta = sc.next().charAt(0);
+            if(respuesta == 's'){
+                System.out.println("Hasta Luego! ");
+                break;
+            }
+
+        }while(contraseña != 'a');
+*/
+
+
     }
 }
