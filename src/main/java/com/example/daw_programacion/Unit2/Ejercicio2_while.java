@@ -1,4 +1,4 @@
-package com.example.daw_programacion;
+package com.example.daw_programacion.Unit2;
 
 import java.util.Scanner;
 
@@ -32,6 +32,7 @@ public class Ejercicio2_while {
 */
 
         //3. Contraseña
+/*
         Scanner sc = new Scanner(System.in);
         char input;
         int count = 0;
@@ -51,5 +52,15 @@ public class Ejercicio2_while {
                 break;
             }
         }while( input != 'A');
+*/
+
+
+        //4. continue
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(i);
+            if (i == 3) continue;
+            if (i == 4) break;
+            System.out.println(i);
+        }
     }
 }

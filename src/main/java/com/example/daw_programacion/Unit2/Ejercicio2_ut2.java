@@ -1,8 +1,8 @@
-package com.example.daw_programacion;
+package com.example.daw_programacion.Unit2;
 
 import java.util.Scanner;
 
-public class Ejercicio2_estructuras {
+public class Ejercicio2_ut2 {
     public static void main(String[] args) {
         //Estructura if
 /*

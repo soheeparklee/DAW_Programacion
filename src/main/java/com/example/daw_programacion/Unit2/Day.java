@@ -1,4 +1,4 @@
-package com.example.daw_programacion;
+package com.example.daw_programacion.Unit2;
 
 public enum Day {
     SUNDAY(0),

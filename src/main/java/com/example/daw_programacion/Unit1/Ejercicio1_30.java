@@ -1,12 +1,17 @@
-package com.example.daw_programacion;
+package com.example.daw_programacion.Unit1;
 
 public class Ejercicio1_30 {
     public static void main(String[] args) {
-        //21. ¿Qué sucederá?
+        //⭐️21. ¿Qué sucederá?
         // Porque este pasa?
         // This is a problem with Scanner when mixing nextXXX() that do not consume newline and nextLine()
         // When I input nextInt() and press enter, enter is read to be the nextLine()
         // Resulting in returning the int and a blank line
+
+        // scanner.close()
+        // If you close a scanner, you will not be able to call a scanner again in the same class
+        // You cannot create another object new Scanner() again in the same class after closing
+        // Only one object Scanner() per class
 
         // solution_1
  /*       Scanner sc = new Scanner(System.in);

@@ -1,4 +1,4 @@
-package com.example.daw_programacion;
+package com.example.daw_programacion.Unit1;
 import java.util.Scanner;
 
 public class Ejercicio1_20 {
@@ -61,7 +61,7 @@ public class Ejercicio1_20 {
 
 */
 
-        //13. ¿Qué resultado esperas para cada operación?
+        //⭐️13. ¿Qué resultado esperas para cada operación?
 /*        int a = 10;
         int b = 5;
         a += b;
@@ -82,7 +82,7 @@ public class Ejercicio1_20 {
         System.out.println("El área del círculo es: " + radio*radio*PI);
 */
 
-        //15. ¿Qué resultado esperas para cada operación?
+        //⭐️15. ¿Qué resultado esperas para cada operación?
 /*
         int x =10;
         int y = ++x +5;
@@ -115,7 +115,7 @@ public class Ejercicio1_20 {
         }
 */
 
-        //18. ¿Cuál es el valor de las variables?
+        //⭐️18. ¿Cuál es el valor de las variables?
         //implícita: mas pequeño a más grande
         //explícita: más grande a maás pequeño
 /*
@@ -130,7 +130,7 @@ public class Ejercicio1_20 {
         System.out.println("implicito: " + implicito ); //10.0
 */
 
-        //19. ¿Cuál es el valor de b y el resultado final?
+        //⭐️19. ¿Cuál es el valor de b y el resultado final?
         // T
 /*
         int a = 10;
@@ -140,7 +140,7 @@ public class Ejercicio1_20 {
         System.out.println(result);
 */
 
-        //20. ¿Cuál es el valor de las variables?
+        //⭐️20. ¿Cuál es el valor de las variables?
         // 5, -5, 5, 6, 6
 /*
         int a=5;
