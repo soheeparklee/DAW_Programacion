@@ -191,48 +191,45 @@ public class Ejercicio2_estructuras {
 
         //12.
         Scanner sc = new Scanner(System.in);
-        float medio;
-        int sum = 0;
-        int count = 0;
-        boolean bool = true;
-        int input;
+        boolean toContinue = true;
 
-        while (bool){
-            do {
+        while (toContinue){
+            float medio;
+            int sum = 0;
+            int count = 0;
+
+            while(true){
                 System.out.println("Numero entre el 1 y el 10: ");
-                input = sc.nextInt();
+                int input = sc.nextInt();
+
+
 
                 if (input == 0) {
                     System.out.println("Has puesto 0. Fin de la captura de datos.");
-
-                    char deseo;
-                    do {
-                        System.out.println("Deseas una nueva ejecución? Solo acepta 's' o 'n'");
-                        deseo = sc.next().toLowerCase().charAt(0);
-                        if (deseo == 's') {
-                            System.out.println("Hacemos una nueva ejecuión. ");
-                            break;
-                        } else if (deseo == 'n') {
-                            System.out.println("Terminamos.");
-                            break;
-                        }
-                    } while (deseo != 's' && deseo != 'n');
-
-                    bool = false;
                     break;
                 }
 
                 if (input > 10 || input < 0) {
                     System.out.println("No! Solo numero entre el 1 y el 10! ");
-                    break;
+                    continue;
                 }
 
-                sum += input;
                 count++;
+                sum += input;
                 medio = (float) sum / count;
                 System.out.println("medio: " + medio);
+            }
 
-            } while (input <= 10 && input >= 1);
+            char deseo;
+            do {
+                System.out.println("Deseas una nueva ejecución? (s/n)");
+                deseo = sc.next().toLowerCase().charAt(0);
+                if (deseo == 'n') {
+                    System.out.println("Terminamos. Bye!!");
+                    toContinue = false;
+                    break;
+                }
+                }while (deseo != 's' && deseo != 'n') ;
         }
     }
 }
