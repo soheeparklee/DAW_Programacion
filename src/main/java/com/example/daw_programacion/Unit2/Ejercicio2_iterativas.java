@@ -164,6 +164,82 @@ public class Ejercicio2_iterativas {
         }while(contraseña != 'a');
 */
 
+        //🙃9. Cuenta números
+        //con do-while
+/*
+        Scanner sc = new Scanner(System.in);
+        int input;
+        do{
+            System.out.println("Ingresa un número entero positivo mayor que 500");
+            input = sc.nextInt();
+
+            if(input > 500){
+                System.out.println("-----------");
+                for(int i=0; i<=input; i+=20){
+                    System.out.println(i);
+                }
+                System.out.println("-----------");
+            }
+
+        }while(input <= 500);
+*/
+
+        //con solo while(true) y continue
+/*        Scanner sc = new Scanner(System.in);
+        int input;
+
+        while(true){
+            System.out.println("Ingresa un número entero positivo mayor que 500");
+            input = sc.nextInt();
+
+            if(input <= 500){
+                System.out.println("Por favor, MAYOR que 500. ");
+                continue;
+            }
+
+            System.out.println("-----------");
+            for(int i=0; i<=input; i+=20){
+                System.out.println(i);
+            }
+            System.out.println("-----------");
+        }
+*/
+
+        //con modificición
+/*
+        Scanner sc = new Scanner(System.in);
+        int input;
+        do{
+            System.out.println("Ingresas un número entero positivo mayor que 500");
+            input = sc.nextInt();
+
+            if(input > 500){
+                System.out.println("Elija el intervalo en el que deseas contar (por ejemplo: 5/10/20)");
+                int intervalo = sc.nextInt();
+
+                System.out.println("-----------");
+                for(int i=0; i<=input; i+=intervalo){
+                    System.out.println(i);
+                }
+                System.out.println("-----------");
+            }
+
+        }while(input <= 500);
+*/
+
+        //8. Cuenta dígitos
+
+        Scanner sc = new Scanner(System.in);
+        int input;
+        do{
+            input = sc.nextInt();
+            if(input > 0){
+                //String.valueOf(input).length();
+
+                int count;
+                for(int i=0; )
+            }
+        }while( input > 0 );
 
     }
 }
