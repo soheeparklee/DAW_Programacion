@@ -22,7 +22,7 @@ public class Ejercicio2_ut2 {
         }
 */
 
-        //1. Ejecutar
+        //⭐️ 1. Ejecutar
 /*        int x=0;
         int n = 16;
         while (n % 2 == 0) {
@@ -33,15 +33,18 @@ public class Ejercicio2_ut2 {
         System.out.println(x); //8
 */
 
-        //2. Cuántas veces se ejecuta? 50 veces
- /*       int a = 9;
+        //⭐ 2. Cuántas veces se ejecuta? 50 veces
+/*        int a = 9;
         int i = 0;
+        int count = 0;
         while(i < 100){
             if((a%4 == 0) || (i%2 == 0)){
                 System.out.println("a: " + a + ", i: " + i);
+                count++;
             }
             i++;
         }
+        System.out.println(count);
 */
         //3. Número de suerte
 /*
@@ -53,12 +56,14 @@ public class Ejercicio2_ut2 {
         Integer ano = Integer.parseInt(fecha.substring(4, 8));
 
         Integer sum = dia + mes + ano;
+*/
 
-        int a;
+        //3-1. Solution w if
+/*        int a;
         int b;
         int c;
         int d;
-        if(sum >= 10){
+        while(sum >= 10){
             if(sum >= 1000){
                 a = sum / 1000;
                 b = (sum - a*1000) / 100;
@@ -77,10 +82,23 @@ public class Ejercicio2_ut2 {
                 sum = a + b;
             }
         }
+*/
+
+        //3-2. Solution with while
+/*        while(sum > 9){
+            int temp = 0;
+            while(sum > 0){
+                temp += sum % 10;
+                sum /= 10;
+            }
+            sum = temp;
+        }
 
         System.out.println("Tu núermo suerte es: " + sum);
-
 */
+
+
+
         //4. Multiplica 1 al 10
 /*
         for (int i=1; i<11; i++){
@@ -93,10 +111,24 @@ public class Ejercicio2_ut2 {
         //5. Solo muestre los primeros 5 número
 /*
         Scanner sc = new Scanner(System.in);
-        System.out.println("Pone mas the 5 números: ");
+        System.out.println("Pone mas de 5 números: ");
         String input = sc.nextLine();
         System.out.println("Solo los 5 primeros números: " + input.substring(0, 5));
 */
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Pone un número: ");
+        int input = sc.nextInt();
+        if(input % 2 != 0){
+            input++;
+        }
+        int count = 0;
+        while(count<5){
+            System.out.println(input);
+            input +=2;
+            count++;
+        }
+
         //6. Números del 1 al 20 que no sean múltiplos de 5
 /*
         for(int i=1; i<21; i++){
@@ -190,7 +222,7 @@ public class Ejercicio2_ut2 {
 */
 
         //12.
-        Scanner sc = new Scanner(System.in);
+/*        Scanner sc = new Scanner(System.in);
         boolean toContinue = true;
 
         while (toContinue){
@@ -231,5 +263,7 @@ public class Ejercicio2_ut2 {
                 }
                 }while (deseo != 's' && deseo != 'n') ;
         }
+
+*/
     }
 }

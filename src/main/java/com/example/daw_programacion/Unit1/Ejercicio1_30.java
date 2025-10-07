@@ -40,6 +40,15 @@ public class Ejercicio1_30 {
         System.out.println(cadena);
 */
 
+/*
+        ✅ printf
+        %d: int, long
+        %f: decimal float, double, usar %.2f para dos decimales
+        %s: String
+        %c: char
+        %b: boolran
+        %n: para salto de línea, mejor que \n ya que es portable entre sistemas
+*/
         //22. Modifícalo utilizando printf
 /*
         int edad = 25;
@@ -51,7 +60,19 @@ public class Ejercicio1_30 {
         char inicial = 'A';
         boolean esEmpleado = true;
 
-        System.out.printf("Hay una chica que se llama %s, empienzando con un %c y su apellido es %s. Ella tiene %d edad y tiene %d años de experiencia. Su salario es %f y el incremento es %f. Es %b que ella es empleado. ", nombre, inicial, apellido, edad, años, salario, incremento, esEmpleado);
+        Leyenda de Formato en printf:
+        ✔️ %-20s : Alinea una cadena (String) a la izquierda en un espacio de 10 caracteres.
+        Ejemplo: printf("%-10s", "Texto");
+        ✔️ %5d : Alinea un entero (int) a la derecha en un espacio de 10 caracteres.
+        Ejemplo: printf("%10d", 123);
+        ⭐️ %10.2f : Alinea un número decimal (double) a la derecha en un espacio de 10 caracteres
+        con 2 decimales.
+        Ejemplo: printf("%10.2f", 123.45);
+        ✔️ %n : Salto de línea.
+        Ejemplo: printf("%n");
+
+        System.out.printf("Hay una chica que se llama %s, empienzando con un %c y su apellido es %s. %nElla tiene %d edad y tiene %d años de experiencia. %nSu salario es %f y el incremento es %f. %nEs %b que ella es empleado."
+                        , nombre, inicial, apellido, edad, años, salario, incremento, esEmpleado);
 */
 
         //23. Análisis de Ventas Semanales
