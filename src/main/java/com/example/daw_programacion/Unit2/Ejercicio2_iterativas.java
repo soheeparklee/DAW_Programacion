@@ -228,18 +228,128 @@ public class Ejercicio2_iterativas {
 */
 
         //8. Cuenta dígitos
-
+        //can be 2 solutions to getting length of number
+        // (1) change int to String
+        // (2) use while loop
+/*
         Scanner sc = new Scanner(System.in);
         int input;
+        int count=1;
+        int result=0;
+
         do{
+            System.out.println("Ingrea un número: ");
             input = sc.nextInt();
             if(input > 0){
-                //String.valueOf(input).length();
 
-                int count;
-                for(int i=0; )
+                //result = String.valueOf(input).length(); //(1)
+
+                while(input > 9){ //(2)
+                    input = input / 10;
+                    count++;
+                }
             }
-        }while( input > 0 );
+        }while( input <= 0 );
 
+        System.out.println("Tu numero tiene " + count + " digito/digitos.");
+        System.out.println("Tu numero tiene " + result + " digito/digitos.");
+*/
+
+        //7. Suma de números.
+/*
+        Scanner sc = new Scanner(System.in);
+        int input = sc.nextInt();
+        int result = 0;
+
+        for(int i=1; i<= input; i++){
+            result += i;
+        }
+
+        System.out.println(result);
+*/
+        //6. Adivina el número con límite de intentos
+
+/*
+        Scanner sc = new Scanner(System.in);
+        int miNumero = 20;
+        int input;
+        int intento = 0;
+
+        do{
+            System.out.println("Adivina un número entre 1 y 50!: ");
+             input = sc.nextInt();
+
+             if(input > miNumero){
+                 System.out.println("El número es menor que tu aporte. ");
+             }else if(input < miNumero){
+                 System.out.println("El número es mayor que tu aporte. ");
+             }
+             intento++;
+
+             if(intento == 5){
+                 System.out.println("Acaba tus intentos. ");
+                 break;
+             }
+        }while(input != miNumero);
+
+        System.out.println("Terminamos. ");
+*/
+
+        //5. Contador de números positivos.
+
+/*        Scanner sc = new Scanner(System.in);
+        int input;
+        int count = 0;
+
+        do{
+            System.out.println("Ingresa un número: ");
+            input = sc.nextInt();
+
+            if(input < 0){
+                System.out.println("Your input has to be a positive number");
+                break;
+            }
+
+            count++;
+
+        }while(input > 0);
+
+
+        System.out.println("El escrutinio de los números positivos: " + count);
+        */
+
+        //4. Mostrar números en orden ascendente y descendente
+        //4-1. for
+        System.out.println("------ for -----");
+        for(int i=1; i<11; i++){
+            System.out.println(i);
+        }
+        for(int i=10; i>0; i--){
+            System.out.println(i);
+        }
+        //4-2. while
+        System.out.println("------ while -----");
+        int i = 1;
+        while(i<11){
+            System.out.println(i);
+            i++;
+        }
+        int j = 10;
+        while(j>0){
+            System.out.println(j);
+            j--;
+        }
+        //4-3. do while
+        System.out.println("------ do while -----");
+        int k = 1;
+        do{
+            System.out.println(k);
+            k++;
+        }while(k<11);
+        int l = 10;
+        do{
+            System.out.println(l);
+            l--;
+        }while(l>0);
     }
 }
