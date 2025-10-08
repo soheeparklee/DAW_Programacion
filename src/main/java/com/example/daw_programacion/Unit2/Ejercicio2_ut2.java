@@ -84,7 +84,7 @@ public class Ejercicio2_ut2 {
         }
 */
 
-        //3-2. Solution with while
+        //💛 3-2. Solution with while
 /*        while(sum > 9){
             int temp = 0;
             while(sum > 0){
@@ -111,12 +111,6 @@ public class Ejercicio2_ut2 {
         //5. Solo muestre los primeros 5 número
 /*
         Scanner sc = new Scanner(System.in);
-        System.out.println("Pone mas de 5 números: ");
-        String input = sc.nextLine();
-        System.out.println("Solo los 5 primeros números: " + input.substring(0, 5));
-*/
-
-        Scanner sc = new Scanner(System.in);
         System.out.println("Pone un número: ");
         int input = sc.nextInt();
         if(input % 2 != 0){
@@ -128,8 +122,18 @@ public class Ejercicio2_ut2 {
             input +=2;
             count++;
         }
+*/
+        //5. When I didn't understand the question , printing the first 5
+/*
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Pone mas de 5 números: ");
+        String input = sc.nextLine();
+        System.out.println("Solo los 5 primeros números: " + input.substring(0, 5));
+*/
+
 
         //6. Números del 1 al 20 que no sean múltiplos de 5
+        //6-1. use for, if not
 /*
         for(int i=1; i<21; i++){
             if(i%5 != 0){
@@ -137,7 +141,19 @@ public class Ejercicio2_ut2 {
             }
         }
 */
+
+        //6-2. Use continue
+/*
+         for(int i=1; i<21; i++){
+            if(i%5 == 0){
+                continue;
+            }
+            System.out.println(i);
+        }
+*/
+
         //7. Lea un número y devuela binaria
+        //7.1 with stringbuffer
 /*
         Scanner sc = new Scanner(System.in);
         System.out.println("Input decimal number: ");
@@ -164,6 +180,22 @@ public class Ejercicio2_ut2 {
         System.out.println("binary: "+ binary);
 */
 
+        //7.2 💛
+/*
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Input decimal number: ");
+        int decimal = sc.nextInt();
+        String binary = "";
+
+        do{
+            binary = decimal%2 + binary;
+            decimal = decimal/2;
+        }while(decimal > 0);
+
+        System.out.println(binary);
+*/
+
+
         //8. Transforma for en while
 /*        int i = 5;
         while(i<15){
@@ -173,33 +205,53 @@ public class Ejercicio2_ut2 {
         */
 
         //9. Pedir al usuario cinco cadenas de texto y generar una sola cadena uniéndolas todas
-/*
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Te pido cinco cadenas de texto: ");
-        String primero = sc.nextLine();
-        String segundo = sc.nextLine();
-        String trecero = sc.nextLine();
-        String quarto = sc.nextLine();
-        String quinto = sc.nextLine();
+/*        Scanner sc = new Scanner(System.in);
 
-        System.out.println(primero + segundo + trecero + quarto + quinto);
-*/
+        String resultado = "";
+        for(int i=0; i<5; i++){
+            System.out.println("Te pido cinco cadenas de texto: ");
+            resultado += sc.nextLine();
+        }
+
+        System.out.println(resultado);
+        */
+
         //10. Se deja pedir cuando la cantidad supera el valor 50
+
 /*
         Scanner sc = new Scanner(System.in);
-
         int i = 0;
         while( i < 50){
             System.out.println("Te pido un numero: ");
             int input = sc.nextInt();
             i += input;
+
             if( i > 50) {
                 System.out.println("La suma supera el valor 50. Suma: " + i);
                 break;
             }
+
             System.out.println("Suma: " + i);
         }
 */
+
+
+        //10-2 do-while
+/*
+        int i = 0;
+        do{
+            System.out.println("Te pido un numero: ");
+            int input = sc.nextInt();
+            i += input;
+        }while( i < 50);
+
+        if(i>50){
+            System.out.println("La suma supera el valor 50. Suma: " + i);
+        }else{
+            System.out.println("Suma: " + i);
+        }
+*/
+
         //11. Escribir *
 /*
         Scanner sc = new Scanner(System.in);
@@ -221,7 +273,7 @@ public class Ejercicio2_ut2 {
 
 */
 
-        //12.
+        //12. 💛
 /*        Scanner sc = new Scanner(System.in);
         boolean toContinue = true;
 

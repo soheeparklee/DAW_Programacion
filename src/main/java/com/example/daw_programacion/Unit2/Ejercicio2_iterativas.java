@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class Ejercicio2_iterativas {
     public static void main(String[] args) {
         //12. Dibuhar figuras
-
 /*
+
          for(int i=1; i<=5; i++){
             for(int j=1; j<=i; j++){
                 System.out.print("*");
@@ -30,8 +30,9 @@ public class Ejercicio2_iterativas {
         }
 */
 
-        //12. Ingrese el número de filas para la pirámide hueca: triangulo 5
-/*        Scanner sc = new Scanner(System.in);
+        //12. 💛 Ingrese el número de filas para la pirámide hueca: triangulo 5
+/*
+        Scanner sc = new Scanner(System.in);
         System.out.println("Put a number: ");
         int input = sc.nextInt();
 
@@ -67,15 +68,12 @@ public class Ejercicio2_iterativas {
             if(i != 1 ){
                 System.out.print("*");
             }
-
             System.out.println();
+        }*/
 
-        }
-*/
-
-        //12. Triangulo mas largp
+        //12. Triangulo mas largo
         for(int i=1; i<=5; i++){
-            for(int j=5; j>=i; j--){
+            for(int j=2; j>i; j--){
                 System.out.print(" ");
             }
             System.out.print("*");
@@ -89,11 +87,30 @@ public class Ejercicio2_iterativas {
             if(i != 1 ){
                 System.out.print("*");
             }
-
             System.out.println();
             System.out.println();
-
         }
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Put a number: ");
+        int input = sc.nextInt();
+        for(int i=0; i<input; i++){
+            for(int j=input; j>i/2; j--){
+                System.out.print("a");
+            }
+            System.out.print("*");
+            for(int k=0; k<i; k++){
+                System.out.print("b");
+            }
+            if( i != 0){
+                System.out.print("*");
+            }
+
+            System.out.println();
+            System.out.println();
+        }
+
+
 
         //11. Generar tabla de multiplicar
         //Solution_1. using while(true)
@@ -320,7 +337,7 @@ public class Ejercicio2_iterativas {
 
         //4. Mostrar números en orden ascendente y descendente
         //4-1. for
-        System.out.println("------ for -----");
+/*        System.out.println("------ for -----");
         for(int i=1; i<11; i++){
             System.out.println(i);
         }
@@ -351,5 +368,7 @@ public class Ejercicio2_iterativas {
             System.out.println(l);
             l--;
         }while(l>0);
+        */
+
     }
 }
