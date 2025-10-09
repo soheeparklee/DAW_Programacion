@@ -5,9 +5,8 @@ import java.util.Scanner;
 public class Ejercicio2_iterativas {
     public static void main(String[] args) {
         //12. Dibuhar figuras
-/*
 
-         for(int i=1; i<=5; i++){
+/*         for(int i=1; i<=5; i++){
             for(int j=1; j<=i; j++){
                 System.out.print("*");
             }
@@ -30,7 +29,7 @@ public class Ejercicio2_iterativas {
         }
 */
 
-        //12. 💛 Ingrese el número de filas para la pirámide hueca: triangulo 5
+        //12. 💛 Ingrese el número de filas para la pirámide hueca: full triangulo 5
 /*
         Scanner sc = new Scanner(System.in);
         System.out.println("Put a number: ");
@@ -47,7 +46,7 @@ public class Ejercicio2_iterativas {
         }
 */
 
-        //12. Ingrese el número de filas para la pirámide hueca: triangulo pequeño vacio 5
+        //12. Ingrese el número de filas para la pirámide hueca: 정삼각형 triangulo pequeño vacio 5
 /*
         Scanner sc = new Scanner(System.in);
         System.out.println("Put a number: ");
@@ -69,11 +68,14 @@ public class Ejercicio2_iterativas {
                 System.out.print("*");
             }
             System.out.println();
-        }*/
+        }
+*/
 
-        //12. Triangulo mas largo
+        //12. Triangulo mas largo 이등변삼각형
+
+/*
         for(int i=1; i<=5; i++){
-            for(int j=2; j>i; j--){
+            for(int j=3; j>i; j--){
                 System.out.print(" ");
             }
             System.out.print("*");
@@ -90,7 +92,7 @@ public class Ejercicio2_iterativas {
             System.out.println();
             System.out.println();
         }
-
+*/
         Scanner sc = new Scanner(System.in);
         System.out.println("Put a number: ");
         int input = sc.nextInt();
