@@ -1,6 +1,4 @@
-package com.example.daw_programacion.Unit2;
-
-import java.util.Scanner;
+package com.example.daw_programacion.Unit2_loop;
 
 public class Ejercicio2_while {
     public static void main(String[] args) {

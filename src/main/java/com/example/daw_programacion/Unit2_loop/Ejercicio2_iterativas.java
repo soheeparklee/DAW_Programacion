@@ -1,4 +1,4 @@
-package com.example.daw_programacion.Unit2;
+package com.example.daw_programacion.Unit2_loop;
 
 import java.util.Scanner;
 
@@ -93,6 +93,7 @@ public class Ejercicio2_iterativas {
             System.out.println();
         }
 */
+/*
         Scanner sc = new Scanner(System.in);
         System.out.println("Put a number: ");
         int input = sc.nextInt();
@@ -112,6 +113,7 @@ public class Ejercicio2_iterativas {
             System.out.println();
         }
 
+*/
 
 
         //11. Generar tabla de multiplicar
@@ -250,11 +252,10 @@ public class Ejercicio2_iterativas {
         //can be 2 solutions to getting length of number
         // (1) change int to String
         // (2) use while loop
-/*
         Scanner sc = new Scanner(System.in);
         int input;
         int count=1;
-        int result=0;
+        //int result=0;
 
         do{
             System.out.println("Ingrea un número: ");
@@ -271,8 +272,7 @@ public class Ejercicio2_iterativas {
         }while( input <= 0 );
 
         System.out.println("Tu numero tiene " + count + " digito/digitos.");
-        System.out.println("Tu numero tiene " + result + " digito/digitos.");
-*/
+        //System.out.println("Tu numero tiene " + result + " digito/digitos.");
 
         //7. Suma de números.
 /*

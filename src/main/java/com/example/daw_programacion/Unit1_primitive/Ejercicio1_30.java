@@ -1,4 +1,4 @@
-package com.example.daw_programacion.Unit1;
+package com.example.daw_programacion.Unit1_primitive;
 
 public class Ejercicio1_30 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.example.daw_programacion.Unit1;
+package com.example.daw_programacion.Unit1_primitive;
 import java.util.Scanner;
 
 public class Ejercicio1_20 {

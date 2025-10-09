@@ -1,7 +1,4 @@
-package com.example.daw_programacion.Unit2;
-
-import java.awt.*;
-import java.util.Scanner;
+package com.example.daw_programacion.Unit2_loop;
 
 public class Ejercicio2_UD2 {
     public static void main(String[] args) {
