@@ -1,5 +1,7 @@
 package com.example.daw_programacion.Unit2_loop;
 
+import java.util.Scanner;
+
 public class Ejercicio2_ut2 {
     public static void main(String[] args) {
         //Estructura if
@@ -268,11 +270,11 @@ public class Ejercicio2_ut2 {
             }
         }
         System.out.println("No mas ");
-
 */
 
+
         //12. 💛
-/*        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         boolean toContinue = true;
 
         while (toContinue){
@@ -283,8 +285,6 @@ public class Ejercicio2_ut2 {
             while(true){
                 System.out.println("Numero entre el 1 y el 10: ");
                 int input = sc.nextInt();
-
-
 
                 if (input == 0) {
                     System.out.println("Has puesto 0. Fin de la captura de datos.");
@@ -314,6 +314,5 @@ public class Ejercicio2_ut2 {
                 }while (deseo != 's' && deseo != 'n') ;
         }
 
-*/
     }
 }

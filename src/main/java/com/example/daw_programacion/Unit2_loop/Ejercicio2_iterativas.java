@@ -6,13 +6,12 @@ public class Ejercicio2_iterativas {
     public static void main(String[] args) {
         //12. Dibuhar figuras
 
-/*         for(int i=1; i<=5; i++){
+         for(int i=1; i<=5; i++){
             for(int j=1; j<=i; j++){
                 System.out.print("*");
             }
             System.out.println("");
         }
-*/
 
         //12. Modifique el código para que sea el usuario el que decida el número filas que tendrá el triángulo.
 
@@ -252,6 +251,7 @@ public class Ejercicio2_iterativas {
         //can be 2 solutions to getting length of number
         // (1) change int to String
         // (2) use while loop
+/*
         Scanner sc = new Scanner(System.in);
         int input;
         int count=1;
@@ -273,6 +273,7 @@ public class Ejercicio2_iterativas {
 
         System.out.println("Tu numero tiene " + count + " digito/digitos.");
         //System.out.println("Tu numero tiene " + result + " digito/digitos.");
+*/
 
         //7. Suma de números.
 /*

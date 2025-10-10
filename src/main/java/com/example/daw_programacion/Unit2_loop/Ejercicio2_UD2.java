@@ -1,5 +1,7 @@
 package com.example.daw_programacion.Unit2_loop;
 
+import java.util.Scanner;
+
 public class Ejercicio2_UD2 {
     public static void main(String[] args) {
         //28. Encuentra palíndromo
@@ -117,6 +119,44 @@ public class Ejercicio2_UD2 {
 */
         //24. Separar dígitos pares e impares de dos números
 
+        Scanner sc = new Scanner(System.in);
+        System.out.println("El usuario introduce el primer número: ");
+        int primero = sc.nextInt();
+        System.out.println("El usuario introduce el segundo número: ");
+        int segundo = sc.nextInt();
+
+        String pares = "";
+        String impares = "";
+
+        int nuevoPrimero= 0;
+        while(primero > 0){
+            int num = primero % 10;
+            if(num % 2 == 0){
+                pares += num;
+            }else{
+                impares += num;
+            }
+            nuevoPrimero = nuevoPrimero * 10 + num;
+            primero = primero / 10;
+        }
+
+        int nuevoSegundo= 0;
+        while(segundo > 0){
+            int num = segundo % 10;
+            if(num % 2 == 0){
+                pares += num;
+            }else{
+                impares += num;
+            }
+            nuevoSegundo = nuevoSegundo * 10 + segundo % 10;
+            segundo = segundo / 10;
+        }
+
+        System.out.println("El número formado por los dígitos pares es: " + pares);
+        System.out.println("El número formado por los dígitos impares es: " +impares);
+
+
+
         //23. Fibonacci
 /*
         Scanner sc = new Scanner(System.in);
@@ -139,7 +179,8 @@ public class Ejercicio2_UD2 {
             count++;
         }
 */
-        //22. Dibujar figuras
+        // 9. Determinar si un número es primo
+
 
 
 
