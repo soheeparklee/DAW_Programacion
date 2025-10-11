@@ -119,6 +119,7 @@ public class Ejercicio2_UD2 {
 */
         //24. Separar dígitos pares e impares de dos números
 
+/*
         Scanner sc = new Scanner(System.in);
         System.out.println("El usuario introduce el primer número: ");
         int primero = sc.nextInt();
@@ -155,6 +156,7 @@ public class Ejercicio2_UD2 {
         System.out.println("El número formado por los dígitos pares es: " + pares);
         System.out.println("El número formado por los dígitos impares es: " +impares);
 
+*/
 
 
         //23. Fibonacci
@@ -180,15 +182,26 @@ public class Ejercicio2_UD2 {
         }
 */
         // 9. Determinar si un número es primo
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Te enseño si este número es primo: ");
+        int input = sc.nextInt();
+        boolean resulto = false;
+
+        if(input <=1){
+            resulto = false;
+        }
 
 
+        for(int i=2; i<input; i++){
+            if(input % i == 0){
+                resulto = false;
+                break;
+            }else{
+                resulto = true;
+            }
+        }
 
-
-
-
-
-
-
+        System.out.println("Número " + input + " es primo?: " + resulto);
 
     }
 }
