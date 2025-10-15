@@ -1,4 +1,4 @@
-package com.example.daw_programacion.Unit3_class;
+package com.example.daw_programacion.Unit3_class.car;
 
 public class Car {
     //bad to make public!

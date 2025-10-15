@@ -1,4 +1,4 @@
-package com.example.daw_programacion.Unit3_class;
+package com.example.daw_programacion.Unit3_class.alumno;
 
 public class Alumno {
     String nombre;
@@ -13,5 +13,9 @@ public class Alumno {
 
     public String getNombre(){
         return this.nombre;
+    }
+
+    public void setTurno(Turno t){
+        this.turno = t;
     }
 }
