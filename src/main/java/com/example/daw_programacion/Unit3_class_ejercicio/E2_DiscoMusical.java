@@ -1,11 +1,11 @@
 package com.example.daw_programacion.Unit3_class_ejercicio;
 
 public class E2_DiscoMusical {
-    String titulo;
-    String autor;
-    int añoEdicion;
-    String formato;
-    boolean digital;
+    private String titulo;
+    private String autor;
+    private int añoEdicion;
+    private String formato;
+    private boolean digital;
 
     public E2_DiscoMusical(String titulo, String autor, int añoEdicion, String formato, boolean digital){
         this.titulo = titulo;

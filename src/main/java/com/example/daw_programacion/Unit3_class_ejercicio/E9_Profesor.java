@@ -1,11 +1,11 @@
 package com.example.daw_programacion.Unit3_class_ejercicio;
 
 public class E9_Profesor {
-    String nombre;
-    String apellido;
-    int edad;
-    boolean casado;
-    boolean espcialista;
+    private String nombre;
+    private String apellido;
+    private int edad;
+    private boolean casado;
+    private boolean espcialista;
 
     public E9_Profesor(String nombre, String apellido, int edad, boolean casado, boolean espcialista){
         this.nombre = nombre;

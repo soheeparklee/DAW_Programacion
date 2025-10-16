@@ -13,6 +13,23 @@ public class Car {
     private int velocidad;
     private double carburante; //fuel
 
+    public Car(){}
+
+    public Car(String color, int velocidad, double carburante){
+        this.color = color;
+        this.velocidad = velocidad;
+        this.carburante = carburante;
+    }
+
+    public Car(Car car){ //copy constructor
+        this.color = car.getColor();
+        this.velocidad = car.getVelocidad();
+        this.carburante = car.getCarburante();
+    }
+
+    //These 3 constructors are example of sobrecarga de métodos
+    //method overloading
+
     public String getColor(){
         return color;
     }

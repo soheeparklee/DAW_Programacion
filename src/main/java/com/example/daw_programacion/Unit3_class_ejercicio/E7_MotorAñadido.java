@@ -1,11 +1,11 @@
 package com.example.daw_programacion.Unit3_class_ejercicio;
 
 public class E7_MotorAñadido {
-    int tipoBomba;
-    String tipoFluido;
-    String combustible; //fuel
+    private int tipoBomba;
+    private String tipoFluido;
+    private String combustible; //fuel
 
-    boolean motorEsParaAgua;
+    private boolean motorEsParaAgua;
 
     public E7_MotorAñadido(){
         this.tipoBomba = 10;

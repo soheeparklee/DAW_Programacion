@@ -1,12 +1,12 @@
 package com.example.daw_programacion.Unit3_class_ejercicio;
 
 public class E3_Medico {
-    String nombre;
-    String apellido;
-    int edad;
-    boolean casado;
-    String numeroDocumentoIdentidad;
-    String especialidad;
+    private String nombre;
+    private String apellido;
+    private int edad;
+    private boolean casado;
+    private String numeroDocumentoIdentidad;
+    private String especialidad;
 
     public E3_Medico(){
         this.nombre = "John";
@@ -56,6 +56,5 @@ public class E3_Medico {
             System.out.println("Ha cambiado el numeroDocumentoIdentidad del médico de nombre " + medico.nombre + ". El nuevo numeroDocumentoIdentidad es: " + medico.numeroDocumentoIdentidad);
             medico.setEspecialidad("Psiquiatra");
             System.out.println("Ha cambiado el especialidad del médico de nombre " + medico.nombre + ". El nuevo especialidad es: " + medico.especialidad);
-
     }
 }

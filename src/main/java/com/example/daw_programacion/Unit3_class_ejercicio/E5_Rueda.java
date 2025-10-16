@@ -1,10 +1,10 @@
 package com.example.daw_programacion.Unit3_class_ejercicio;
 
 public class E5_Rueda {
-    String tipo;
-    double grosor; //thickness
-    double diametro;
-    String marca;
+    private String tipo;
+    private double grosor; //thickness
+    private double diametro;
+    private String marca;
 
     public E5_Rueda(){
         this.tipo = "tipoA";

@@ -1,9 +1,9 @@
 package com.example.daw_programacion.Unit3_class_ejercicio;
 
 public class E6_Motor {
-    int tipoBomba;
-    String tipoFluido;
-    String combustible; //fuel
+    private int tipoBomba;
+    private String tipoFluido;
+    private String combustible; //fuel
 
     public E6_Motor(){
         this.tipoBomba = 10;
