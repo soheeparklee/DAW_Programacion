@@ -1,4 +1,4 @@
-package com.example.daw_programacion.Unit3_class_ejercicio;
+package com.example.daw_programacion.Unit3_class_ejercicio_1;
 
 public class E1_Person {
     private String nombre;

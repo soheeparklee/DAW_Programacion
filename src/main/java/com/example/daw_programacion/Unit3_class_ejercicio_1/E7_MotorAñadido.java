@@ -1,14 +1,17 @@
-package com.example.daw_programacion.Unit3_class_ejercicio;
+package com.example.daw_programacion.Unit3_class_ejercicio_1;
 
-public class E6_Motor {
+public class E7_MotorAñadido {
     private int tipoBomba;
     private String tipoFluido;
     private String combustible; //fuel
 
-    public E6_Motor(){
+    private boolean motorEsParaAgua;
+
+    public E7_MotorAñadido(){
         this.tipoBomba = 10;
         this.tipoFluido = "tipoA";
         this.combustible = "combustibleA";
+        this.motorEsParaAgua = false;
     }
 
     public int getTipoBomba() {
@@ -35,6 +38,13 @@ public class E6_Motor {
         this.combustible = combustible;
     }
 
+    public void setMotorEsParaAgua(int num){
+        if(num == 1){
+            this.motorEsParaAgua = true;
+        }else{
+            this.motorEsParaAgua = false;
+        }
+    }
     public void dimeTipoMotor(){
         switch (this.tipoBomba) {
             case 0:
@@ -55,6 +65,11 @@ public class E6_Motor {
             default:
                 System.out.println("No existe un valor válido para tipo de bomba");
         }
+    }
+
+    public boolean dimeSiMotorEsParaAgua(int num){
+        setMotorEsParaAgua(num);
+        return this.motorEsParaAgua;
     }
 
 }
