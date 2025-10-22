@@ -19,6 +19,30 @@ public class E9_Fraccion {
     }
 
     public E9_Fraccion sumar(E9_Fraccion f){
-        return f;
+        int denResult = this.den * f.den;
+        int numResult = this.den * f.num + this.num * f.den;
+        E9_Fraccion result = new E9_Fraccion(numResult, denResult);
+        return result;
     }
+    public E9_Fraccion restar(E9_Fraccion f){
+        int denResult = this.den * f.den;
+        int numResult =  this.num * f.den - this.den * f.num;
+        E9_Fraccion result = new E9_Fraccion(numResult, denResult);
+        return result;
+    }
+    public E9_Fraccion multiplicar(E9_Fraccion f){
+        int denResult = this.den * f.den;
+        int numResult =  this.num * f.num;
+        E9_Fraccion result = new E9_Fraccion(numResult, denResult);
+        return result;
+    }
+    public E9_Fraccion dividir(E9_Fraccion f){
+        int denResult = this.den * f.num;
+        int numResult =  this.num * f.den;
+        E9_Fraccion result = new E9_Fraccion(numResult, denResult);
+        return result;
+    }
+
+
+
 }
