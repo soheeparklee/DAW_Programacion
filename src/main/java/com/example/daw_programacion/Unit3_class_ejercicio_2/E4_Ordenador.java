@@ -1,15 +1,40 @@
 package com.example.daw_programacion.Unit3_class_ejercicio_2;
 
 public class E4_Ordenador {
-    private String name;
-    private static String type = "WOO";
+    String tipo;
+    String color;
+    int capacidad;
 
-    public E4_Ordenador(String name, String type) {
-        this.name = name;
-        this.type = type;
+    public E4_Ordenador(String tipo, String color, int capacidad) {
+        this.tipo = tipo;
+        this.color = color;
+        this.capacidad = capacidad;
     }
 
-    public String getType() {
-        return type;
+    public E4_Ordenador() {
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getCapacidad() {
+        return capacidad;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setCapacidad(int capacidad) {
+        this.capacidad = capacidad;
     }
 }
