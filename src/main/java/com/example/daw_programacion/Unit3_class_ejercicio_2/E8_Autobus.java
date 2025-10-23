@@ -42,4 +42,16 @@ public class E8_Autobus {
         System.out.println("numeroDeLinea: " + numeroDeLinea + " ruta: " + ruta +" capacidadMaxima: " + capacidadMaxima + " pasajeroActuales: " + pasajeroActuales + " horario: " + horario + " tiempoDeEspera: " + tiempoDeEspera + " enRuta: " + enRuta);
     }
 
+    @Override
+    public String toString() {
+        return "E8_Autobus{" +
+                "numeroDeLinea='" + numeroDeLinea + '\'' +
+                ", ruta='" + ruta + '\'' +
+                ", capacidadMaxima=" + capacidadMaxima +
+                ", pasajeroActuales=" + pasajeroActuales +
+                ", horario='" + horario + '\'' +
+                ", tiempoDeEspera=" + tiempoDeEspera +
+                ", enRuta=" + enRuta +
+                '}';
+    }
 }
