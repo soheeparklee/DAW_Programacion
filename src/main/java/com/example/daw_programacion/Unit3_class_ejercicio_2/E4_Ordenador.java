@@ -37,4 +37,13 @@ public class E4_Ordenador {
     public void setCapacidad(int capacidad) {
         this.capacidad = capacidad;
     }
+
+    @Override
+    public String toString() {
+        return "E4_Ordenador{" +
+                "capacidad=" + capacidad +
+                ", tipo='" + tipo + '\'' +
+                ", color='" + color + '\'' +
+                '}';
+    }
 }
