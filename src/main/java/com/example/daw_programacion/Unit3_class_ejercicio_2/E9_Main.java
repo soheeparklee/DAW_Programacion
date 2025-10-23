@@ -7,9 +7,16 @@ public class E9_Main {
         E9_Fraccion f3 = new E9_Fraccion();
         E9_Fraccion f4 = new E9_Fraccion(4);
 
-        E9_Fraccion resulto = f1.sumar(f2);
+        E9_Fraccion resulto1 = f1.sumar(f2);
+        resulto1.monstrar();
 
+        E9_Fraccion resulto2 = f1.restar(f2);
+        resulto2.monstrar();
 
+        E9_Fraccion resulto3 = f1.multiplicar(f2);
+        resulto3.monstrar();
 
+        E9_Fraccion resulto4 = f1.dividir(f2);
+        resulto4.monstrar();
     }
 }

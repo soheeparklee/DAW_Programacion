@@ -18,6 +18,23 @@ public class E9_Fraccion {
         this.den = den;
     }
 
+
+    public int getNum() {
+        return num;
+    }
+
+    public int getDen() {
+        return den;
+    }
+
+    public void setDen(int den) {
+        this.den = den;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
+    }
+
     public E9_Fraccion sumar(E9_Fraccion f){
         int denResult = this.den * f.den;
         int numResult = this.den * f.num + this.num * f.den;
@@ -41,6 +58,9 @@ public class E9_Fraccion {
         int numResult =  this.num * f.den;
         E9_Fraccion result = new E9_Fraccion(numResult, denResult);
         return result;
+    }
+    public void monstrar(){
+        System.out.println(this.num + " " + this.den);
     }
 
 
