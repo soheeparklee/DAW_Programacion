@@ -4,6 +4,21 @@ import java.util.Scanner;
 
 public class Ejercicio2_UD2 {
     public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese una cadena de texto: ");
+        String input = sc.nextLine().toLowerCase();
+
+        for(int i=0; i<input.length()/2; i++){
+            if(input.charAt(i) != input.charAt(input.length()-1-i)){
+                System.out.println("No es palindromo");
+                break;
+            }else{
+                System.out.println("Es palindromo");
+            }
+
+        }
+
         //28. Encuentra palíndromo
 /*        Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese una cadena de texto: ");
@@ -155,8 +170,8 @@ public class Ejercicio2_UD2 {
 
         System.out.println("El número formado por los dígitos pares es: " + pares);
         System.out.println("El número formado por los dígitos impares es: " +impares);
-
 */
+
 
 
         //23. Fibonacci
@@ -182,6 +197,7 @@ public class Ejercicio2_UD2 {
         }
 */
         // 9. Determinar si un número es primo
+        /*
         Scanner sc = new Scanner(System.in);
         System.out.println("Te enseño si este número es primo: ");
         int input = sc.nextInt();
@@ -204,4 +220,7 @@ public class Ejercicio2_UD2 {
         System.out.println("Número " + input + " es primo?: " + resulto);
 
     }
+    */
+    }
+
 }
