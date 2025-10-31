@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=Triangulo
+comment1.params=base\ altura\ lado2\ lado3
+comment1.target=Triangulo(double,\ double,\ double,\ double)
+comment10.params=
+comment10.target=double\ getPerimetro()
+comment11.params=
+comment11.target=double\ getArea()
+comment2.params=
+comment2.target=double\ getAltura()
+comment3.params=altura
+comment3.target=void\ setAltura(double)
+comment4.params=
+comment4.target=double\ getBase()
+comment5.params=base
+comment5.target=void\ setBase(double)
+comment6.params=
+comment6.target=double\ getLado2()
+comment6.text=\r\n\ public\ double\ getLado1()\r\n\ {\r\n\ \ \ \ \ return\ lado1;\r\n\ }\r\n\ public\ void\ setLado1(double\ lado1)\r\n\ {\r\n\ \ \ \ \ this.lado1\ \=\ lado1;\r\n\ }\r\n
+comment7.params=lado2
+comment7.target=void\ setLado2(double)
+comment8.params=
+comment8.target=double\ getLado3()
+comment9.params=lado3
+comment9.target=void\ setLado3(double)
+numComments=12

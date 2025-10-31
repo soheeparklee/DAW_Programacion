@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Circunferencia
+comment1.params=radio
+comment1.target=Circunferencia(double)
+comment2.params=
+comment2.target=double\ getRadio()
+comment3.params=radio
+comment3.target=void\ setRadio(double)
+comment4.params=
+comment4.target=double\ getArea()
+comment5.params=
+comment5.target=double\ getPerimetro()
+numComments=6

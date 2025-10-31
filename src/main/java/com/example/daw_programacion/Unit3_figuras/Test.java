@@ -1,7 +1,9 @@
 package com.example.daw_programacion.Unit3_figuras;
 
-/* import figuras.*;
-//import figuras.Triangulo;
+
+import com.example.daw_programacion.Unit3_figuras.Figuras.Circunferencia;
+import com.example.daw_programacion.Unit3_figuras.Figuras.Cuadrado;
+import com.example.daw_programacion.Unit3_figuras.Figuras.Triangulo;
 
 public class Test
 {
@@ -30,4 +32,4 @@ public class Test
         
     }
 }
-*/
+
