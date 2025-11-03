@@ -247,6 +247,7 @@ public class Ejercicio2_iterativas {
         }while(input <= 500);
 */
 
+
         //8. Cuenta dígitos
         //can be 2 solutions to getting length of number
         // (1) change int to String

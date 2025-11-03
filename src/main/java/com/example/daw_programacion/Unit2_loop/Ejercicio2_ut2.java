@@ -97,6 +97,19 @@ public class Ejercicio2_ut2 {
         System.out.println("Tu núermo suerte es: " + sum);
 */
 
+        int fecha = 1997;
+
+        while(fecha > 9 ){
+            int suerte = 0;
+            while(fecha > 0){
+                suerte += fecha % 10;
+                fecha = fecha / 10;
+            }
+            fecha = suerte;
+        }
+
+        System.out.println(fecha);
+
 
 
         //4. Multiplica 1 al 10
@@ -194,6 +207,21 @@ public class Ejercicio2_ut2 {
 
         System.out.println(binary);
 */
+        int decimal = 7;
+        String binary = "";
+
+        while(decimal > 0){
+            if(decimal % 2 == 0){
+                binary = "0" + binary ;
+            }else{
+                binary = "1" + binary ;
+            }
+            decimal = decimal / 2;
+        }
+
+        System.out.println(binary);
+
+
 
 
         //8. Transforma for en while
@@ -274,7 +302,7 @@ public class Ejercicio2_ut2 {
 
 
         //12. 💛
-        Scanner sc = new Scanner(System.in);
+/*        Scanner sc = new Scanner(System.in);
         boolean toContinue = true;
 
         while (toContinue){
@@ -313,6 +341,68 @@ public class Ejercicio2_ut2 {
                 }
                 }while (deseo != 's' && deseo != 'n') ;
         }
+
+        */
+
+
+        Scanner sc = new Scanner(System.in);
+        int input;
+        boolean continuar = true;
+
+        while(continuar){
+
+            float medio = 0;
+            int sum = 0;
+            int count = 0;
+
+            do{
+                System.out.println("Entre numero entre 1 y 10");
+                input = sc.nextInt();
+
+                if(input == 0){
+                    System.out.println("Terminamos la captura de datos");
+                    break;
+                }
+
+                if(input > 0 && input <= 10){
+                    sum += input;
+                    count++;
+                    medio = sum / count;
+                }
+
+            }while(input >= 0 && input <= 10);
+
+            System.out.println("medio: " + medio);
+
+            char c;
+            do{
+                System.out.println("Desea una nueva ejecución? s/n");
+                c =  sc.next().charAt(0);
+
+                if(c == 's'){
+                    continue;
+                }else if(c == 'n'){
+                    System.out.println("Bye Bye");
+                    continuar = false;
+                    break;
+                }
+            }while(c != 's' &&  c!= 'n');
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
 }

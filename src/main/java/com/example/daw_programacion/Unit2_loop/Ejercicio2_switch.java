@@ -61,8 +61,8 @@ public class Ejercicio2_switch {
         */
 
         //3. Switch yield
-        int day = 3;
-        String dayName = switch(day){
+/*        int day = 3;
+        String dayName = switch (day) {
             case 1 -> "Monday";
             case 2 -> "Tuesday";
             case 3 -> {
@@ -74,6 +74,32 @@ public class Ejercicio2_switch {
         };
 
         System.out.println("Day is " + dayName);
-
     }
+*/
+
+    //yield: exit a switch expression by returning a value that becomes the value of the switch expression
+
+
+    int today = 3;
+/*    switch(today){
+        case 1, 2:
+            System.out.println("no");
+            break;
+        case 3:
+            System.out.println("yes");
+            break;
+        default:
+            System.out.println("not here");
+    }*/
+
+    String dayName = switch (today){
+        case 1, 2-> "nono";
+        case 3 -> "sisi";
+        default -> "idk";
+    };
+        System.out.println(dayName);
+
+
+}
+
 }
