@@ -26,12 +26,12 @@ public class Album {
     public Album() {
     }
 
-    public Album(Album album){
+    public Album(Album album){ //❌
         this.titulo = album.titulo;
         this.autor = album.autor;
         this.discográfia = album.discográfia;
         this.año = album.año;
-        this.soporte = album.soporte;
+        this.soporte = album.soporte; //❌
         this.elementos = album.elementos;
         this.precio = album.precio;
         this.genero = album.genero;
@@ -137,10 +137,12 @@ public class Album {
                 "Español:       " + español;
     }
 
+    //❌
     public double calcularPrecio(Album album) {
         return this.precio + album.precio;
     }
 
+    //❌
     public double calcularPrecio(Album album, double iva) {
         return (this.precio + album.precio)*(1 + iva * 0.01);
     }
