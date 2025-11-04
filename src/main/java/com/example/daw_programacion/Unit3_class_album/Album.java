@@ -26,12 +26,12 @@ public class Album {
     public Album() {
     }
 
-    public Album(Album album){ //❌
+    public Album(Album album, Soporte soporte){ //❌
         this.titulo = album.titulo;
         this.autor = album.autor;
         this.discográfia = album.discográfia;
         this.año = album.año;
-        this.soporte = album.soporte; //❌
+        this.soporte = soporte; //❌
         this.elementos = album.elementos;
         this.precio = album.precio;
         this.genero = album.genero;
@@ -125,7 +125,10 @@ public class Album {
                 '}';
     }
 
-    public String imprimirAlbum() {
+    
+
+    @Override
+    public String toString() {
         return "Datos del álbum" + '\n' +
                 "Titulo:        " + titulo + '\n' +
                 "Autor:         " + autor + '\n' +
