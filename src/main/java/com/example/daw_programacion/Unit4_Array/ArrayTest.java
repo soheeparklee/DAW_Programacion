@@ -1,16 +1,29 @@
 package com.example.daw_programacion.Unit4_Array;
 
+import java.util.Arrays;
+
 public class ArrayTest {
     public static void main(String[] args) {
-        int [] numeros = new int[5];
-        numeros[0] = 4;
-        numeros[1] = 1;
-        numeros[2] = 5;
-        numeros[3] = 3;
-        numeros[4] = 8;
+        int [] numeros1 ={4, 1, 5, 8, 3};
+        int [] numeros2 = numeros1.clone();
+        int [] numeros3 = {1, 1, 1, 1, 1};
+        int [] numeros4 = numeros1;
 
-        for(int i=0; i <= numeros.length; i++){
-            System.out.println(numeros[i]);
-        }
+        System.out.println(numeros1 == numeros2); //false
+        System.out.println(numeros1.equals(numeros2)); //false
+
+        //to compare array, use import java.util.Arrays;
+        // compare values
+        //두 array의 reference달라도 value같으면 true
+        System.out.println(Arrays.equals(numeros1, numeros2)); //true
+        System.out.println(Arrays.compare(numeros1, numeros2)); //0, vuelve 0 si el mismo
+
+        //두 array의 value다르면 false
+        System.out.println(Arrays.equals(numeros1, numeros3)); //false
+        System.out.println(Arrays.compare(numeros1, numeros3)); //1
+
+        //두 array의 reference같고 value같으면 true
+        System.out.println(Arrays.equals(numeros1, numeros4)); //true
+        System.out.println(Arrays.compare(numeros1, numeros4)); //0
     }
 }
