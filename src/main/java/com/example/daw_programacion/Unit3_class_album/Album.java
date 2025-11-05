@@ -110,6 +110,7 @@ public class Album {
         this.titulo = titulo;
     }
 
+    /*
     @Override
     public String toString() {
         return "Album{" +
@@ -124,6 +125,8 @@ public class Album {
                 ", español=" + español +
                 '}';
     }
+
+     */
 
     
 

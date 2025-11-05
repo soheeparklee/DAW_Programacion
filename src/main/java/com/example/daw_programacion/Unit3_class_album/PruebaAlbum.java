@@ -9,8 +9,8 @@ public class PruebaAlbum {
 
         Album album3 = new Album(album2, Soporte.CD);
 
-        System.out.println(album1.imprimirAlbum());
-        System.out.println(album3.imprimirAlbum());
+        System.out.println(album1.toString());
+        System.out.println(album3.toString());
 
         System.out.println("Precio total (sin IVA): "+ album1.calcularPrecio(album2) + " euros");
         System.out.println("Precio total (con 16% IVA): " + album1.calcularPrecio(album2, 16) + " euros");
