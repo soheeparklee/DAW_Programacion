@@ -11,14 +11,28 @@ public class Matriz {
         datos = new int[tamaño][tamaño];
     }
 
+    public int getTamaño() {
+        return tamaño;
+    }
+
+    public int[][] getDatos() {
+        return datos;
+    }
+
     public void asignarDatos(int[] vector){
-        for (int v : vector) {
-            for (int i = 0; i < tamaño; i++) {
-                for (int j = 0; j < tamaño; j++) {
-                    datos[i][j] = v;
-                }
+        int num=0;
+
+        for (int i = 0; i < tamaño; i++) {
+            for (int j = 0; j < tamaño; j++) {
+                datos[i][j] = vector[num];
+                num++;
             }
         }
+
+        /*
+
+
+         */
     }
 
     public void suma(Matriz matriz){
@@ -38,18 +52,25 @@ public class Matriz {
     }
 
     public void traspuesta(){
-        int [][] vectorNuevo = new int[tamaño][tamaño];
         for (int i = 0; i < tamaño; i++) {
             for (int j = 0; j < tamaño; j++) {
-                vectorNuevo[j][i] = datos[i][j];
+                this.datos[j][i] = datos[i][j];
             }
         }
     }
 
     @Override
     public String toString() {
-        return "Matriz{" +
-                "datos=" + Arrays.toString(datos) +
-                '}';
+        StringBuilder result = new StringBuilder();
+        for (int[] datoArr : this.datos) {
+            for (int i: datoArr){
+                result.append(i);
+            }
+            result.append( '\n' );
+        }
+        result.append( '\n' );
+        result.append("--------------");
+        result.append( '\n' );
+        return result.toString();
     }
 }
