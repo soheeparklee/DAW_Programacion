@@ -60,6 +60,20 @@ public class Ejercicio2_switch {
         }
         */
 
+        String hoy = "MON";
+
+        switch(hoy){
+            case "MON":
+                System.out.println("Monday");
+                break;
+            case "TUE":
+                System.out.println("Tuesday");
+                break;
+            default:
+                System.out.println("IDK");
+                break;
+        }
+
         //3. Switch yield
 /*        int day = 3;
         String dayName = switch (day) {
