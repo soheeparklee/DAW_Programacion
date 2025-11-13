@@ -3,6 +3,10 @@ package com.example.daw_programacion.Unit4_DateTime;
 import java.time.LocalDate;
 import java.time.Period;
 
+
+/**
+ *
+ */
 public class Alumno {
     private String nombre;
     private LocalDate bDay;
@@ -10,6 +14,12 @@ public class Alumno {
 
     //make constructor 1
     //parameter: localDate bday
+
+    /**
+     * Este constructor es para...
+     * @param nombre
+     * @param bDay
+     */
     public Alumno(String nombre, LocalDate bDay) {
         this.nombre = nombre;
         this.bDay = bDay;
