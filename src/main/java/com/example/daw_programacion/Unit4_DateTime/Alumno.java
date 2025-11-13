@@ -4,9 +4,7 @@ import java.time.LocalDate;
 import java.time.Period;
 
 
-/**
- *
- */
+
 public class Alumno {
     private String nombre;
     private LocalDate bDay;
