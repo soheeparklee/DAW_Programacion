@@ -34,6 +34,23 @@ public class StringTest {
         // 👉👉👉👉 So if you want to compare values, just use .equals()
 
 
+        /*String cad1 = new String("Popo");
+        String cad2 = new String(cad1);
+        //cad1 and 2 are different instances
+
+        System.out.println(cad1 == cad2); //false*/
+
+        System.out.println("aaaaa");
+        String cad1 = "So Hee";
+        String cad2 = "Park";
+        String result1 = cad1 + cad2;
+        String result2 = cad1.concat(cad2);
+        cad1 = cad1.concat(cad2);
+        System.out.println(result1); //So HeePark
+        System.out.println(result2); //So HeePark
+
+
+
 
     }
 }
