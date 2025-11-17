@@ -1,4 +1,4 @@
-package com.example.daw_programacion.Unit4_Array;
+package com.example.daw_programacion.Test_Dec.ArrayExercicio;
 
 public class MatrizMain {
     public static void main(String[] args) {
@@ -12,9 +12,22 @@ public class MatrizMain {
 
         matriz1.asignarDatos(vector1);
         matriz2.asignarDatos(vector2);
+        matriz1.monstar();
+        matriz2.monstar();
+
+        matriz1.producto(matriz2);
+        matriz1.monstar();
 
         matriz1.suma(matriz2);
-        System.out.println(matriz1.toString());
+        matriz1.monstar();
+
+
+        matriz1.traspuesta2();
+        matriz1.monstar();
+
+
+
+
 
         /*
         Matriz matriz3 = new Matriz(3);
