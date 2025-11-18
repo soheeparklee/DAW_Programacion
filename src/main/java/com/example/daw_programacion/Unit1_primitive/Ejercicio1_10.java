@@ -63,7 +63,6 @@ public class Ejercicio1_10 {
 */
 
         //6. Dado un número de 3 cifras, mostrar cada una de sus cifras por separado.
-/*
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce un número de tres cifras: ");
         int num = sc.nextInt();
@@ -72,7 +71,6 @@ public class Ejercicio1_10 {
         int unidades = num % 10 % 10;
 
         System.out.println(centenas + " " + decenas + " " + unidades);
-*/
 
         //7. Invertir un número de 5 dígitos
 /*
@@ -113,6 +111,7 @@ public class Ejercicio1_10 {
         System.out.println("La parte entera es: " + result);
 */
         //10. Calcular el índice de masa corporal (IMC)
+/*
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce tu peso en kilogramos: ");
         int peso = sc.nextInt();
@@ -124,6 +123,7 @@ public class Ejercicio1_10 {
 
 
 
+*/
 
     }
 }

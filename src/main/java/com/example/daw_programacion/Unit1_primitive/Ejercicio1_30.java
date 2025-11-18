@@ -75,6 +75,9 @@ public class Ejercicio1_30 {
                         , nombre, inicial, apellido, edad, años, salario, incremento, esEmpleado);
 */
 
+        System.out.printf("%-10s", "Hola");
+        System.out.printf("%-10s", "Mundo");
+
         //23. Análisis de Ventas Semanales
         double lunes = 1500.75;
         double martes = 1300.30;

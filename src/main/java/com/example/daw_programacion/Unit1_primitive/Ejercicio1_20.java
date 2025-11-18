@@ -28,6 +28,7 @@ public class Ejercicio1_20 {
         }
 */
         //solution_2
+/*
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce el primer número: ");
         Integer numero1 = Integer.parseInt(sc.nextLine());
@@ -42,6 +43,7 @@ public class Ejercicio1_20 {
         System.out.println("Resultos de comparación: " + result);
         result = numero2 > numero3 ? 1 : numero2 == numero3 ? 0 : -1;
         System.out.println("Resultos de comparación: " + result);
+*/
 
 
         //12. Convertir una temperatura de Celsius a Fahrenheit y viceversa
@@ -101,6 +103,11 @@ public class Ejercicio1_20 {
 
         System.out.println("El promedio de " + primer + " y " + segundo + " es: " + (primer+segundo)/2);
 */
+
+        int number = 12345;
+        for (int i = 10; i <1000000 ; i = i*10) {
+            System.out.println(number%i);
+        }
 
         //17. Por 5 cifras y mostrar progresivamente las últimas cifras del número
 /*
