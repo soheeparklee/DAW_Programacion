@@ -50,6 +50,14 @@ public class StringTest {
         System.out.println(result2); //So HeePark
 
 
+        String x = "hola";
+        x.concat("mundo");
+        System.out.println(x);
+
+        StringBuilder sb = new StringBuilder("Hola");
+        sb.append("mundo");
+        System.out.println(sb);
+
 
 
     }
