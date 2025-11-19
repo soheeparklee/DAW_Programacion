@@ -67,6 +67,13 @@ public class StringTest {
             System.out.println(str.nextToken());
         }
 
+        //La cadena str tiene 4 elements
+        //Uno
+        //Dos
+        //Tres
+        //SoHee_Park
+
+
 
 
     }
