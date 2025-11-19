@@ -52,11 +52,11 @@ public class StringTest {
 
         String x = "hola";
         x.concat("mundo");
-        System.out.println(x);
+        System.out.println(x); //hola
 
         StringBuilder sb = new StringBuilder("Hola");
         sb.append("mundo");
-        System.out.println(sb);
+        System.out.println(sb); //holamundo
 
 
 
