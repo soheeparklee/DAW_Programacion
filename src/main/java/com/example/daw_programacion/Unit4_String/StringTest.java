@@ -1,5 +1,7 @@
 package com.example.daw_programacion.Unit4_String;
 
+import java.util.StringTokenizer;
+
 public class StringTest {
     public static void main(String[] args) {
         // String is immutable
@@ -57,6 +59,13 @@ public class StringTest {
         StringBuilder sb = new StringBuilder("Hola");
         sb.append("mundo");
         System.out.println(sb); //holamundo
+
+        StringTokenizer str;
+        str = new StringTokenizer("Uno Dos Tres SoHee_Park");
+        System.out.println("La cadena str tiene " + str.countTokens() + " elements");
+        while(str.hasMoreTokens()){
+            System.out.println(str.nextToken());
+        }
 
 
 
