@@ -13,7 +13,7 @@ public class Ejercicios_Arrays {
         return count;
     }
     public static void main(String[] args) {
-        //1. coger valor con scanner en un array, dar major
+        //1. coger valor con scanner en ugin array, dar major
         int[] intArr = new int[10];
         Scanner sc = new Scanner(System.in);
         int max = Integer.MIN_VALUE;
