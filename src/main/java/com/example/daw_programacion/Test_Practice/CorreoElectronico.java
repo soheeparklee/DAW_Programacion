@@ -15,16 +15,38 @@ public class CorreoElectronico {
         Pattern pattern = Pattern.compile("[\\w.%+-]+@[\\w.-]+\\.+[a-zA-Z]{2,4}");
         Matcher matcher = pattern.matcher(input);
 
-        while(count < correos.length){
-            while(matcher.find()){
+        while(matcher.find() && count < correos.length){ // need to put them together
                 correos[count] = matcher.group();
                 count++;
             }
-        }
 
-        for (String correo : correos) {
+/*        for (String correo : correos) {
+            correo = correo.replaceFirst("^[^@]+@(.*)$", "www.$1");
             System.out.println(correo);
         }
+*/
+
+
+/*
+        for (String correo : correos) {
+            int index = 0;
+            for (int i = 0; i <correo.length() ; i++) {
+                if(correo.toCharArray()[i] == '@'){
+                    index = i;
+                    break;
+                }
+            }
+            correo = "www." + correo.substring(index+1);
+            System.out.println(correo);
+        }
+*/
+
+        for (String correo : correos) {
+            String[] splitArr = correo.split("@");
+            correo = "www.".concat(splitArr[1]);
+            System.out.println(correo);
+        }
+
 
     }
 }
