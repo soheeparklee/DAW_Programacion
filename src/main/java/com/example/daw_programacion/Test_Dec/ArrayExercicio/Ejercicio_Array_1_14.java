@@ -54,6 +54,7 @@ public class Ejercicio_Array_1_14 {
     */
 
         //2. Monstrar elementos de un array
+/*
         Scanner scanner = new Scanner(System.in);
         String input;
         String[] nombreArr = new String[5];
@@ -66,6 +67,7 @@ public class Ejercicio_Array_1_14 {
         for (String s : nombreArr) {
             System.out.println(s);
         }
+*/
 
         //3. Encontrar el valor máximo en un array
 /*
@@ -131,9 +133,9 @@ public class Ejercicio_Array_1_14 {
 */
 
         //6. Determinar el orden de un array
-/*
         //int[] arrayNum = new int[10];
-        int[] arrayNum = new int[]{10, 9, 8, 7, 6, 5, 4, 30, 2, 1};
+/*
+        int[] arrayNum = new int[]{5, 1, 1, 1};
 //        for (int i = 0; i < arrayNum.length; i++) {
 //            arrayNum[i] = (int) (Math.random() * 100) + 1;
 //        }
