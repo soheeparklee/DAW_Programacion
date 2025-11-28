@@ -9,7 +9,7 @@ public class NumeroPerfecto {
         int input = sc.nextInt();
 
         int count = 0;
-        for (int i = 1; i < input; i++) {
+        for (int i = 1; i < input && count < input; i++) { // add count < input
             if(input % i == 0){
                 count += i;
                 System.out.println(i);

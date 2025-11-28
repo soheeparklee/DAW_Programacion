@@ -6,9 +6,8 @@ import java.util.Scanner;
 public class Ejercicio_Char {
     public static void main(String[] args) {
        /* ⚠️ pregunta para Tereza
-       * cadena de caracteres significa ??
-       * char[] charArray = new char[10]; or just String??
-       * frase significa?? String?
+       * cadena de caracteres significa String
+       * frase significa String, sentence
         */
         //⚠️I want to see together
         // 12. Eliminar la última palabra
