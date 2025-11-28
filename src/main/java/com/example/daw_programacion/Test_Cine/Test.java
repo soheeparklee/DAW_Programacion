@@ -1,12 +1,11 @@
 package com.example.daw_programacion.Test_Cine;
 
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
-        Cine cineCartoon = new Cine("cartoon", 1, "SuperCharlie", LocalTime.of(13, 30), 10, 8);
+        Sala cineCartoon = new Sala("cartoon", 1, "SuperCharlie", LocalTime.of(13, 30), 10, 8);
 
         Scanner sc = new Scanner(System.in);
         int fila;

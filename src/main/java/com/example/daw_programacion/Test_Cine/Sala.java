@@ -5,10 +5,12 @@ import java.util.Arrays;
 
 
 /*
+* @author So Hee Park
+* @version version_1
 * this.estrucura[fila][columna] = false significa no esta ocupado
 * */
 
-public class Cine {
+public class Sala {
     private String nombre;
     private int salaNúmero;
     private String película;
@@ -17,7 +19,7 @@ public class Cine {
     private int estrucuraM;
     private boolean[][] estrucura; // default would be false;
 
-    public Cine(String nombre, int salaNúmero, String película, LocalTime sesión, int estrucuraN, int estrucuraM ) {
+    public Sala(String nombre, int salaNúmero, String película, LocalTime sesión, int estrucuraN, int estrucuraM ) {
         this.nombre = nombre;
         this.salaNúmero = salaNúmero;
         this.película = película;
@@ -96,10 +98,13 @@ public class Cine {
                 '}';
     }
 
-
-
-    //reservarAsiento
-    //this.estrucura[fila][columna] = false significa no esta ocupado
+    /*
+    * esta metodo es para explica......
+    * @param fila es el row
+    * @param columna es el column
+    * @return boolean si es ocupado
+    * this.estrucura[fila][columna] = false significa no esta ocupado
+    */
     public boolean reservarAsiento(int fila, int columna){
         boolean reservado = this.estrucura[fila][columna];
         if (!reservado){
