@@ -71,6 +71,73 @@ public class Ejercicio_Char {
 */
         //7.
         //6. ⚠️ cadena??
+/*        Scanner sc = new Scanner(System.in);
+        String input;
+        int max = Integer.MIN_VALUE;
+        String result="";
+        do{
+            System.out.println("Pone un cadena: ");
+            input = sc.nextLine();
+            if(input.length() >= max){
+                max = input.length();
+                result = input;
+            }
+
+        }while(!input.equals("fin"));
+
+        System.out.println(result);
+*/
+
+        //5. Diga está en mayúsculas o no
+/*
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+        char[] charArr = input.toCharArray();
+        boolean isMayuscula = false;
+        for (char c : charArr) {
+           if(c <= 90){
+               isMayuscula = true;
+           }else{
+               isMayuscula = false;
+           }
+        }
+
+        System.out.println("Esta en mayúsculas: " + isMayuscula);
+*/
+
+        //5-1. 하나라도 대문자이면 대문자, 하나라도 소문자이면 소문자
+/*
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+        char[] charArr = input.toCharArray();
+        boolean isAllMayuscula = true;
+        for (char c : charArr) {
+            if(Character.isLowerCase(c)){
+                isAllMayuscula = false;
+                break;
+            }
+        }
+        System.out.println(isAllMayuscula);
+*/
+
+        //4. ⭐️palíndromo
+        String input = "a.s dfghjk,ll,kjhgfd s.a";
+        //String input ="a. bfs,djkf dklnlfs,sdns.sdsdv sdsddlkn";
+        //1️⃣ method 1: use replace
+        String strReplace = input.replace(".", "").replace(",", "").replace("\s", "");
+
+        //2️⃣ method2: use pattern
+        String regex = "[,\\.\\s]";
+        String[] strSplitArray = input.split(regex);
+        StringBuilder sb = new StringBuilder();
+        for (String s : strSplitArray) {
+            sb.append(s);
+        }
+
+        StringBuilder reverseSb = new StringBuilder(sb);
+        System.out.println(sb.toString().equals(reverseSb.toString())); // false 👍🏻
+
+
 
     }
 }
