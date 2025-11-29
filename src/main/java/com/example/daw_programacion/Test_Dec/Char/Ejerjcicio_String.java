@@ -9,7 +9,97 @@ public class Ejerjcicio_String {
     public static void main(String[] args) {
         //1. Contar vocales y consonantes
 
+        //7. Extractor de dominios de email
+        String[] emails = {
+                "user@example.com" ,
+                "admin@company.co.uk" ,
+                "test.email@domain.org" ,
+                "invalid.email.com" ,
+                "another@test@multiple.com"
+        };
+
+        Pattern pattern = Pattern.compile("@");
+        for (String email : emails) {
+            Matcher matcher = pattern.matcher(email);
+            //valid email
+            int count = 0;
+            while(matcher.find()){
+                count++;
+            }
+            if(count == 1){
+                //usa indexOf() para encontrar posicion de @
+                int arrobaLocacation = email.indexOf("@");
+                //extrae usario con subString()
+                String usar = email.substring(0, arrobaLocacation);
+                String usarResto = email.substring(arrobaLocacation);
+                //extrae dominio con subString()
+                int puntoLocation = usarResto.indexOf(".");
+                String domino = usarResto.substring(1, puntoLocation);
+                //extra extensión con lastIndexOf()
+                String extension = usarResto.substring(puntoLocation);
+
+                System.out.println("usar: " + usar + " dominio: " + domino + " extension: " + extension);
+
+            }else if(count > 1){
+                System.out.println("Invalido(más de un @)");
+
+            }else{
+                //not valid
+                System.out.println("Invalido(sin @)");
+            }
+        }
+
+        //8. Formateador de Texto con limite de caracteres
+        //method1_ stringbuffer
+    String texto = "Las expresiones regulares es un tema que los programadores suelen posponer.";
+        int maxCaracteres = 30;
+
+        String[] splitArr = texto.split(" ");
+        int count = 0;
+   /*
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < splitArr.length; i++) {
+            int length = splitArr[i].length();
+            if((count + length) <= maxCaracteres){
+                count += length;
+                sb.append(splitArr[i]);
+                sb.append(" ");
+            }else{
+                System.out.println(sb);
+                count = 0;
+                count += length;
+                sb = new StringBuilder();
+                sb.append(splitArr[i]);
+                sb.append(" ");
+            }
+        }
+        if(!sb.isEmpty()) System.out.println(sb);
+
+*/
+/*
+        String result = "";
+        for (int i = 0; i < splitArr.length; i++) {
+            String now = splitArr[i];
+            //cabe en linea actual?
+            if(now.length() + result.length() <= maxCaracteres){
+                //case one: first letter
+                if(result.length() == 0){
+                    result = now;
+                }else{
+                    //case two: second letter onwards
+                    result += " " + now;
+                }
+            }else{
+                //no cabe en linea
+                System.out.println(result);
+                result = now;
+            }
+        }
+
+*/
+
         //9. Comparador de Similitud de Cadenas
+/*
         String[] pares = {
                 "hello" , "hallo" ,
                 "java" , "javascript" ,
@@ -30,6 +120,7 @@ public class Ejerjcicio_String {
             }
             System.out.println(pares[i-1] + " vs " + pares[i] + " " + count*100/maxLength + "% similitud");
         }
+*/
 
 
         //10. Procesador de comandos
