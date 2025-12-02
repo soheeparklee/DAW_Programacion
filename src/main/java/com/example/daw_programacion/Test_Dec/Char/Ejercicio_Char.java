@@ -2,6 +2,8 @@ package com.example.daw_programacion.Test_Dec.Char;
 
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Ejercicio_Char {
     public static void main(String[] args) {
@@ -45,10 +47,30 @@ public class Ejercicio_Char {
 */
 
         //9. entrelazadas dos cadenas de caracteres
-/*        String str1 = "abcdefg";
+        String str1 = "abcdefg";
         String str2 = "1234";
-        System.out.println(str1.concat(str2));
-  */
+
+        int shortLength = 0;
+        String longStr = "";
+        if(str1.length() < str2.length()){
+            shortLength = str1.length();
+            longStr = str2;
+        }else{
+            shortLength = str2.length();
+            longStr = str1;
+        }
+
+        StringBuilder sb = new StringBuilder();
+        int i=0;
+        while(i<shortLength) {
+            sb.append(str1.charAt(i));
+            sb.append(str2.charAt(i));
+            i++;
+        }
+
+        sb.append(longStr.substring(shortLength, longStr.length()));
+
+        System.out.println(sb);
 
 
         //8. Nombre Menu
@@ -70,6 +92,107 @@ public class Ejercicio_Char {
 */
         //7.
         //6. ⚠️ cadena??
+/*        Scanner sc = new Scanner(System.in);
+        String input;
+        int max = Integer.MIN_VALUE;
+        String result="";
+        do{
+            System.out.println("Pone un cadena: ");
+            input = sc.nextLine();
+            if(input.length() >= max){
+                max = input.length();
+                result = input;
+            }
 
+        }while(!input.equals("fin"));
+
+        System.out.println(result);
+*/
+
+        //5. Diga está en mayúsculas o no
+/*
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+        char[] charArr = input.toCharArray();
+        boolean isMayuscula = false;
+        for (char c : charArr) {
+           if(c <= 90){
+               isMayuscula = true;
+           }else{
+               isMayuscula = false;
+           }
+        }
+
+        System.out.println("Esta en mayúsculas: " + isMayuscula);
+*/
+
+        //5-1. 하나라도 대문자이면 대문자, 하나라도 소문자이면 소문자
+/*
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+        char[] charArr = input.toCharArray();
+        boolean isAllMayuscula = true;
+        for (char c : charArr) {
+            if(Character.isLowerCase(c)){
+                isAllMayuscula = false;
+                break;
+            }
+        }
+        System.out.println(isAllMayuscula);
+*/
+
+        //4. ⭐️palíndromo
+/*
+        String input = "a.s dfghjk,ll,kjhgfd s.a";
+        //String input ="a. bfs,djkf dklnlfs,sdns.sdsdv sdsddlkn";
+        //1️⃣ method 1: use replace
+        String strReplace = input.replace(".", "").replace(",", "").replace("\s", "");
+
+        //2️⃣ method2: use pattern
+        String regex = "[,\\.\\s]";
+        String[] strSplitArray = input.split(regex);
+        StringBuilder sb = new StringBuilder();
+        for (String s : strSplitArray) {
+            sb.append(s);
+        }
+
+        StringBuilder reverseSb = new StringBuilder(sb);
+        System.out.println(sb.toString().equals(reverseSb.toString())); // false 👍🏻
+*/
+
+
+        //1. cantidad de vocales
+/*
+        String cad = "Hola tu";
+        Pattern pattern = Pattern.compile("[aeiouAEIOU]");
+        Matcher matcher = pattern.matcher(cad);
+
+        int count = 0;
+        while(matcher.find()){
+            count++;
+        }
+        System.out.println(count);
+*/
+
+        //2. invertir una cadena
+/*
+        String cad = "casa blanca";
+        String invertido = "";
+        for (int i = cad.length()-1; i>=0; i--) {
+            invertido += cad.charAt(i);
+        }
+
+        System.out.println(invertido);
+*/
+        //3. cúantas veces repite
+/*        String cad = "casa blanca";
+        char car = 'a';
+        int count = 0;
+        for (char c : cad.toCharArray()) {
+            if(c == car) count++;
+        }
+        System.out.println(count);*/
     }
+
+
 }

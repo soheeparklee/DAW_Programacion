@@ -12,7 +12,7 @@ public class CorreoElectronico {
         String[] correos = new String[5];
 
         int count = 0;
-        Pattern pattern = Pattern.compile("[\\w.%+-]+@[\\w.-]+\\.+[a-zA-Z]{2,4}");
+        Pattern pattern = Pattern.compile("[\\w.%+-]+@[\\w.-]+\\.[a-zA-Z]{2,4}");
         Matcher matcher = pattern.matcher(input);
 
         while(matcher.find() && count < correos.length){ // need to put them together
