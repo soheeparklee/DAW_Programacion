@@ -1,4 +1,6 @@
-package com.example.daw_programacion.ArrayList;
+package com.example.daw_programacion.Collections;
+
+import java.util.Objects;
 
 public class Alumno {
     private String firstName;
@@ -25,5 +27,17 @@ public class Alumno {
                 ", month=" + month +
                 ", date=" + date +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Alumno alumno = (Alumno) o;
+        return year == alumno.year && month == alumno.month && date == alumno.date && Objects.equals(firstName, alumno.firstName) && Objects.equals(lastName, alumno.lastName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, lastName, year, month, date);
     }
 }

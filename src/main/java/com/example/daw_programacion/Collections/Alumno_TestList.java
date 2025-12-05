@@ -1,8 +1,9 @@
-package com.example.daw_programacion.ArrayList;
+package com.example.daw_programacion.Collections;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
-public class Alumno_TestMain {
+public class Alumno_TestList {
     public static void main(String[] args) {
         ArrayList<Alumno> alumnosList = new ArrayList<>();
         Alumno alumno1 = new Alumno("Ana", "Blanco", 2002, 10, 12);
@@ -16,6 +17,7 @@ public class Alumno_TestMain {
         alumnosList.addFirst(alumno4);
         alumnosList.add(1, alumno3);
 
+        // How to iterate 1: use bucle
         for (Alumno alumno : alumnosList) {
             System.out.println(alumno);
         }
@@ -25,7 +27,14 @@ public class Alumno_TestMain {
         }
 
 
+        //2. How to iterate 2: overload toString()
         System.out.println(alumnosList);
+
+        // 3. How to iterate 3: Iterator
+        Iterator<Alumno> alumnosIterator = alumnosList.iterator();
+        while(alumnosIterator.hasNext()){
+            System.out.println(alumnosIterator.next());
+        }
 
 
     }
