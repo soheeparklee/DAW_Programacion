@@ -1,0 +1,15 @@
+package com.example.daw_programacion.UD1_4.Unit3_class.staticPractice;
+
+public class E4_Ordenador {
+    private String name;
+    private static String type = "WOO";
+
+    public E4_Ordenador(String name, String type) {
+        this.name = name;
+        this.type = type;
+    }
+
+    public String getType() {
+        return type;
+    }
+}
