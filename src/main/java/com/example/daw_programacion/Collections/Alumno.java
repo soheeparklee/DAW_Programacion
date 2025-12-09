@@ -17,6 +17,13 @@ public class Alumno {
         this.date = date;
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
 
     @Override
     public String toString() {
