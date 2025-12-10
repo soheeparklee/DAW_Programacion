@@ -22,7 +22,7 @@ public class Ejercicio_sencillo {
        
          */
         
-        ArrayList<Alumno> alumnoArrayList =new ArrayList();
+        ArrayList<Alumno> alumnoArrayList =new ArrayList<>();
         alumnoArrayList.add(alumno1);
         alumnoArrayList.add(alumno2);
         alumnoArrayList.add(alumno3);
@@ -51,5 +51,59 @@ public class Ejercicio_sencillo {
 
         System.out.println(alumnoArrayList);
         */
+
+        //2. ArrayList
+        /*
+        ArrayList<Integer> integerArrayList = new ArrayList<>();
+        integerArrayList.add(1);
+        integerArrayList.add(2);
+        integerArrayList.add(3);
+        integerArrayList.add(4);
+        integerArrayList.add(5);
+        integerArrayList.add(6);
+
+        agregar(integerArrayList, 10);
+        System.out.println(integerArrayList);
+
+        buscar(integerArrayList, 11);
+        modificar(integerArrayList, 12, 17);
+        System.out.println(integerArrayList);
+
+        eliminar(integerArrayList, 17);
+        System.out.println(integerArrayList);
+
+        insertar(integerArrayList, 0, 5);
+        System.out.println(integerArrayList);
+
+*/
+        //3.
+
     }
+    public static void agregar(ArrayList<Integer> arrList, Integer num) {
+        for (int i = 0; i < arrList.size(); i++) {
+            arrList.set(i, arrList.get(i) + num);
+        }
+    }
+
+    public static void buscar(ArrayList<Integer> arrList, Integer num) {
+        if (arrList.contains(num)) {
+            System.out.println("The number is on the index: " + arrList.indexOf(num));
+        } else {
+            System.out.println("Not found");
+        }
+    }
+
+    public static void modificar(ArrayList<Integer> arrList, Integer before, Integer after) {
+        int index = arrList.indexOf(before);
+        arrList.set(index, after);
+    }
+
+    public static void eliminar(ArrayList<Integer> arrList, Integer num) {
+        arrList.remove(num);
+    }
+
+    public static void insertar(ArrayList<Integer> arrList, Integer position, Integer num) {
+        arrList.set(position, num);
+    }
+
 }
