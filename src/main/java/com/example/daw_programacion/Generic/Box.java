@@ -1,4 +1,4 @@
-package com.example.daw_programacion.Collections;
+package com.example.daw_programacion.Generic;
 
 public class Box <T, K>{
     private T contenido;

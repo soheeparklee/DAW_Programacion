@@ -1,4 +1,6 @@
-package com.example.daw_programacion.Collections;
+package com.example.daw_programacion.Generic;
+
+import com.example.daw_programacion.Collections.Alumno;
 
 public class BoxMain {
     Box<String, Integer> stringBox = new Box<>("Hola", 123);
