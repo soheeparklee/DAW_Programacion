@@ -8,4 +8,10 @@ public class Departamento {
     private String ubicacion;
     private ArrayList<Empleado> EmpleadoList;
 
+    public Departamento(String codigo, String ubicacion, String nombre, ArrayList<Empleado> empleadoList) {
+        this.codigo = codigo;
+        this.ubicacion = ubicacion;
+        this.nombre = nombre;
+        EmpleadoList = empleadoList;
+    }
 }

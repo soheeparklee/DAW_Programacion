@@ -7,4 +7,14 @@ public class Empleado {
     private Integer salario;
     private String puesto;
 
+    public Empleado() {
+    }
+
+    public Empleado(String codigo, String nombre, String apellido, Integer salario, String puesto) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.salario = salario;
+        this.puesto = puesto;
+    }
 }
