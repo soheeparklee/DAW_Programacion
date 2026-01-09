@@ -12,6 +12,7 @@ public class EmpleadoMain {
         empleadoArrayList.add(empleado1);
         empleadoArrayList.add(empleado2);
         empleadoArrayList.add(empleado3);
+        empleadoArrayList.add(empleado3);
 
         Departamento departamento = new Departamento("12abc", "LA", "Programming", empleadoArrayList);
 

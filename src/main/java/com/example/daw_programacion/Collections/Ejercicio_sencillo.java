@@ -77,36 +77,11 @@ public class Ejercicio_sencillo {
         System.out.println(integerArrayList);
 
 */
-        //3. Persona
-        ArrayList<Persona> personaArrayList = new ArrayList<>();
-        Persona p1 = new Persona("1", "Park", "Park", "male", 12, 40.0);
-        Persona p2 = new Persona("2", "Dark", "Dark", "male", 12, 40.0);
-        Persona p3 = new Persona("3", "Cark", "Cark", "male", 12, 40.0);
-        Persona p4 = new Persona("4", "Sark", "Sark", "male", 12, 40.0);
-        Persona p5 = new Persona("5", "Aark", "Aark", "male", 12, 40.0);
-
-        personaArrayList.add(p1);
-        personaArrayList.add(p2);
-        personaArrayList.add(p3);
-        personaArrayList.add(p4);
-        personaArrayList.add(p5);
-
-
-
-
-        Collections.sort(personaArrayList); //Aark - Cark - Dark - Park - Sark
-        System.out.println( "personaArrayList" +  personaArrayList);
 
     }
 
-    public static boolean buscarPersona(ArrayList<Persona> personaArrayList, int dni) {
-        for (Persona persona : personaArrayList) {
-            if (persona.getDni().equals(dni)) {
-                return true;
-            }
-        }
-        return false;
-    }
+
+
     public static void agregar(ArrayList<Integer> arrList, Integer num) {
         for (int i = 0; i < arrList.size(); i++) {
             arrList.set(i, arrList.get(i) + num);
