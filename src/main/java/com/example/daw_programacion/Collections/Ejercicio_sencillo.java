@@ -92,9 +92,20 @@ public class Ejercicio_sencillo {
         personaArrayList.add(p5);
 
 
+
+
         Collections.sort(personaArrayList); //Aark - Cark - Dark - Park - Sark
         System.out.println( "personaArrayList" +  personaArrayList);
 
+    }
+
+    public static boolean buscarPersona(ArrayList<Persona> personaArrayList, int dni) {
+        for (Persona persona : personaArrayList) {
+            if (persona.getDni().equals(dni)) {
+                return true;
+            }
+        }
+        return false;
     }
     public static void agregar(ArrayList<Integer> arrList, Integer num) {
         for (int i = 0; i < arrList.size(); i++) {
