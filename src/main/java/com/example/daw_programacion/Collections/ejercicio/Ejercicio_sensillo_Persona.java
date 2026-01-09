@@ -1,6 +1,4 @@
-package com.example.daw_programacion.Collections;
-
-import com.example.daw_programacion.Iterator.Person;
+package com.example.daw_programacion.Collections.ejercicio;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package com.example.daw_programacion.Collections;
+package com.example.daw_programacion.Collections.ejercicio;
 
 public class Persona implements Comparable<Persona>{
     private String dni;
