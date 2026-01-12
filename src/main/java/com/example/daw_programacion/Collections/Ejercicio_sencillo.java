@@ -91,9 +91,6 @@ public class Ejercicio_sencillo {
         personaArrayList.add(p4);
         personaArrayList.add(p5);
 
-
-
-
         Collections.sort(personaArrayList); //Aark - Cark - Dark - Park - Sark
         System.out.println( "personaArrayList" +  personaArrayList);
 

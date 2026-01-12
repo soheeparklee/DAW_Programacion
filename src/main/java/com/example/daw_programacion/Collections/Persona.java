@@ -23,7 +23,7 @@ public class Persona implements Comparable<Persona>{
                 "apellido='" + this.apellido + '\'' +
                 '}';
     }
-
+    
     @Override
     public int compareTo(Persona o) {
         return this.apellido.charAt(0) > o.apellido.charAt(0) ? 1 : (this.apellido.charAt(0) == o.apellido.charAt(0)) ? 0 : -1;
