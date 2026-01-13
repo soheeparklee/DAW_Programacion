@@ -24,7 +24,7 @@ public class Perro extends Animal{
 //    Perro{tipo='type1'} Animal{nombre='pepe', patas=4}
 // however, super.toString() part will print Animal...which is parent class
 
-// case2. only Animal has toString(), perro did not override
+    // case2. only Animal has toString(), perro did not override
     //then, when we run  System.out.println(perro);
     // we will see Animal() parent class's toSting() executed
     // which means, perro class attributes that Animal class does not have will not be printed.
