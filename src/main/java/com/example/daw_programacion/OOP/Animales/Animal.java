@@ -1,6 +1,6 @@
 package com.example.daw_programacion.OOP.Animales;
 
-public class Animal {
+public abstract class Animal {
     private int patas;
     private String nombre;
 
