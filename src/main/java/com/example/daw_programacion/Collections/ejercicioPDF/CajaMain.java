@@ -16,6 +16,6 @@ public class CajaMain {
         list.add(3);
         Caja caja3 = new Caja("box three", list);
 
-        printContent(caja3.getContent());
+        caja3.printContent(caja3.getContent());
     }
 }
