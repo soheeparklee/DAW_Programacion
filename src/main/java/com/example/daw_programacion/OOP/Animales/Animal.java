@@ -25,9 +25,7 @@ public abstract class Animal {
         this.patas = patas;
     }
 
-    public void hacerSonido(){
-        System.out.println("Sonido generico");
-    }
+    public abstract void hacerSonido();
 
     @Override
     public String toString() {
