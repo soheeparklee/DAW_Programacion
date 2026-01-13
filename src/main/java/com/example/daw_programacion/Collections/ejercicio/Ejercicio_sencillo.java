@@ -1,4 +1,6 @@
-package com.example.daw_programacion.Collections;
+package com.example.daw_programacion.Collections.ejercicio;
+
+import com.example.daw_programacion.Collections.Alumno;
 
 import java.util.ArrayList;
 import java.util.Collections;
