@@ -8,6 +8,11 @@ public class Perro extends Animal{
         super(nombre, patas);
     }
 
+    @Override
+    public void hacerSonido() {
+        System.out.println("woof woof");
+    }
+
     public Perro(String nombre, int patas, String tipo) {
         super(nombre, patas);
         this.tipo = tipo;
