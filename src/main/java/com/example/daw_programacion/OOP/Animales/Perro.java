@@ -1,11 +1,20 @@
 package com.example.daw_programacion.OOP.Animales;
 
 public class Perro extends Animal{
-    private String tipo;
 
+    private String color;
 
-    public Perro(String nombre, int patas) {
+    public Perro(String nombre, int patas, String color) {
         super(nombre, patas);
+        this.color = color;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
     @Override
@@ -13,10 +22,13 @@ public class Perro extends Animal{
         System.out.println("woof woof");
     }
 
-    public Perro(String nombre, int patas, String tipo) {
-        super(nombre, patas);
-        this.tipo = tipo;
-    }
+
+
+
+
+
+
+
 
     // case1: perro and animal both have toString() overrided
 /*    @Override

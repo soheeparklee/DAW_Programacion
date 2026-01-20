@@ -1,5 +1,7 @@
 package com.example.daw_programacion.Collections.ejercicio;
 
+import java.util.Objects;
+
 public class Persona implements Comparable<Persona>{
     private String dni;
     private String apellido;
@@ -7,6 +9,22 @@ public class Persona implements Comparable<Persona>{
     private String sexo;
     private Integer edad;
     private Double peso;
+
+    public Persona(String dni) {
+        this.dni = dni;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Persona persona)) return false;
+        return Objects.equals(dni, persona.dni);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(dni);
+    }
 
     public Persona(String dni, String apellido, String nombres, String sexo, Integer edad, Double peso) {
         this.dni = dni;
@@ -24,10 +42,17 @@ public class Persona implements Comparable<Persona>{
                 '}';
     }
     
-    @Override
+/*    @Override
     public int compareTo(Persona o) {
         return this.apellido.charAt(0) > o.apellido.charAt(0) ? 1 : (this.apellido.charAt(0) == o.apellido.charAt(0)) ? 0 : -1;
+    }*/
+
+    @Override
+    public int compareTo(Persona o){
+        return this.apellido.compareToIgnoreCase(o.getApellido());
     }
+
+
 
     public String getDni() {
         return dni;

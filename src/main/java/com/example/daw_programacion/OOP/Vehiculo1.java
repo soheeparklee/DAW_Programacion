@@ -1,16 +1,16 @@
 package com.example.daw_programacion.OOP;
 
-public class Vehiculo {
+public class Vehiculo1 {
     private String matriculo;
     private int numRuedas;
     protected boolean electrico;
 
-    public Vehiculo(String matriculo, int numRuedas) {
+    public Vehiculo1(String matriculo, int numRuedas) {
         this.matriculo = matriculo;
         this.numRuedas = numRuedas;
     }
 
-    public Vehiculo(int numRuedas, String matriculo, boolean electrico) {
+    public Vehiculo1(int numRuedas, String matriculo, boolean electrico) {
         this.numRuedas = numRuedas;
         this.matriculo = matriculo;
         this.electrico = electrico;

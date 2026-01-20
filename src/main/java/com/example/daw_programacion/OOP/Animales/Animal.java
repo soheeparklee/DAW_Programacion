@@ -1,12 +1,14 @@
 package com.example.daw_programacion.OOP.Animales;
 
+import java.util.Objects;
+
 public abstract class Animal {
     private int patas;
     private String nombre;
 
     public Animal(String nombre, int patas) {
-        this.nombre = nombre;
         this.patas = patas;
+        this.nombre = nombre;
     }
 
     public String getNombre() {
@@ -33,5 +35,17 @@ public abstract class Animal {
                 "nombre='" + nombre + '\'' +
                 ", patas=" + patas +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Animal animal)) return false;
+        return patas == animal.patas && Objects.equals(nombre, animal.nombre);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(patas, nombre);
     }
 }

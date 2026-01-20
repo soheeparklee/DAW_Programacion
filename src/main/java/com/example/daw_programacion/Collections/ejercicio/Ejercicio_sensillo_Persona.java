@@ -22,6 +22,9 @@ public class Ejercicio_sensillo_Persona {
         personaArrayList.add(p5);
 
         //1. buscar dado el dni
+        boolean esta = personaArrayList.contains(new Persona("1"));
+        System.out.println("esta: "+ esta);
+
         Persona foundPerson = buscarPersona(personaArrayList, "1");
         if(foundPerson != null){
             System.out.println(foundPerson.toString());
@@ -31,8 +34,8 @@ public class Ejercicio_sensillo_Persona {
         System.out.println( "personaArrayList" +  personaArrayList);
 
         //3. ordenar por apellidos
-        Collections.sort(personaArrayList); //Aark - Cark - Dark - Park - Sark
-        System.out.println( "personaArrayList" +  personaArrayList);
+        //Collections.sort(personaArrayList); //Aark - Cark - Dark - Park - Sark
+        System.out.println( "ㅣㅕㅣㅕㅣㅕㅣㅕ" +  personaArrayList);
 
         //4. monstrar todas las personas
         System.out.println( "personaArrayList" +  personaArrayList);
