@@ -54,11 +54,11 @@ public class EstudianteMain {
         asignacion.put(e4.getID(), listaE4);
 
         //4. Listado de asignaturas disponibles
-        HashMap<String, String> mapAsignatura = new HashMap<>();
-        mapAsignatura.put(fisica.getAsignaturaNombre(), "");
-        mapAsignatura.put(quimica.getAsignaturaNombre(), "");
-        mapAsignatura.put(matematicas.getAsignaturaNombre(), "");
-        mapAsignatura.put(biologia.getAsignaturaNombre(), "");
+        HashSet<Asignatura> setAsignatura = new HashSet<>();
+        setAsignatura.add(fisica);
+        setAsignatura.add(quimica);
+        setAsignatura.add(matematicas);
+        setAsignatura.add(biologia);
 
 
 
@@ -74,8 +74,8 @@ public class EstudianteMain {
 
         //(4) Mostrar cursos únicos:
         System.out.println("--- Asignaturas Ofrecidas ---");
-        for (String nombre: mapAsignatura.keySet()) {
-            System.out.println(nombre);
+        for (Asignatura asig: setAsignatura) {
+            System.out.println(asig.getAsignaturaNombre());
         }
 
 
