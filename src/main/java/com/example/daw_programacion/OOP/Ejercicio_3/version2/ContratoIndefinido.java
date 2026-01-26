@@ -1,9 +1,9 @@
 package com.example.daw_programacion.OOP.Ejercicio_3.version2;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
 
-public class ContratoIndefinido extends Contrato{
+import java.time.LocalDate;
+
+public class ContratoIndefinido extends Contrato {
     private Coche cocheEmpresa;
 
 

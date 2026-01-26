@@ -1,6 +1,5 @@
 package com.example.daw_programacion.OOP.Ejercicio_3.version2;
 
-import java.lang.reflect.Array;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -15,7 +14,7 @@ public class Version2Main {
         ContratoTemporal c1 = new ContratoTemporal(Empresa.BBVA_IT, "Ana", Puesto.GERENTE, Nivel.EXPERTO, 3000, LocalDate.of(2020, 12, 03), 10);
         ContratoTemporal c2 = new ContratoTemporal(Empresa.SOFTDEV, "Jose", Puesto.ARQUITECTO_SOFTWARE, Nivel.LIDER_TECNICO, 5500, LocalDate.of(2018, 10, 03), 10);
         //indefinido
-        ContratoIndefinido c3 = new ContratoIndefinido(Empresa.INNOVATECH, "Hubo Perez", Puesto.DESARROLLADOR, Nivel.SENIOR, 2000, LocalDate.of(2023, 11, 12));
+        ContratoIndefinido c3 = new ContratoIndefinido(Empresa.NEXT_DIGITAL, "Hubo Perez", Puesto.DESARROLLADOR, Nivel.SENIOR, 2000, LocalDate.of(2023, 11, 12));
         Coche cocheC4 = new Coche("Kia", 300);
         ContratoIndefinido c4 = new ContratoIndefinido(Empresa.NTT_DATA, "Jenny", Puesto.GERENTE, Nivel.SENIOR, 1700, LocalDate.of(2013, 04, 12), cocheC4);
         // Los contratos creados deben almacenarse en una lista para su posterior gestión.
