@@ -7,6 +7,12 @@ public class Main {
     public static void main(String[] args) {
         List<Persona> GensionAcademica = new ArrayList<>();
 
+        Estudiante e1 = new Estudiante();
+        Docente d1 = new Docente();
+
+        GensionAcademica.add(e1);
+        GensionAcademica.add(d1);
+
 
     }
 
