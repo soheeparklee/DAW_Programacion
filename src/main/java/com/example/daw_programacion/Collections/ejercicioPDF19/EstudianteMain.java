@@ -10,7 +10,7 @@ public class EstudianteMain {
         Estudiante e4 = new Estudiante("S4", "Laura");
 
         //1. ALmacenamiento de la lista de espera
-        //fifo -> stack
+        //fifo -> ArrayDeque!!!!
         Stack<Estudiante> stack = new Stack<>();
         stack.push(e1);
         stack.push(e2);
@@ -18,6 +18,7 @@ public class EstudianteMain {
         stack.push(e4);
 
         //2. Registro de estudiantes matriculados
+        //repetidos -> hashSet
         HashMap<String, String> registroMatriculado = new HashMap<>();
 
         //(1) Procesar la lista de espera:
@@ -37,6 +38,7 @@ public class EstudianteMain {
         }
 
         //3. Asignación de cursos a estudiantes:
+        //hashMap
         Asignatura fisica = new Asignatura("fisica");
         Asignatura quimica = new Asignatura("quimica");
         Asignatura matematicas = new Asignatura("matematicas");
@@ -54,6 +56,7 @@ public class EstudianteMain {
         asignacion.put(e4.getID(), listaE4);
 
         //4. Listado de asignaturas disponibles
+        //forma unica -> hashSet
         HashSet<Asignatura> setAsignatura = new HashSet<>();
         setAsignatura.add(fisica);
         setAsignatura.add(quimica);
