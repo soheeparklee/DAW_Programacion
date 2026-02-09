@@ -86,14 +86,16 @@ public abstract class Contrato implements GestionarContrato, BeneficiosContrato{
         this.salario *= (1+(porcentaje/100));
     }
 
-    @Override
-    public Contrato compararSalario(Contrato otroContrato) {
-        if(this.salario >= otroContrato.salario){
-            return this;
-        }else{
-            return otroContrato;
-        }
-    }
+//    @Override
+//    public Contrato compararSalario(Contrato otroContrato) {
+//        if(this.salario >= otroContrato.salario){
+//            return this;
+//        }else{
+//            return otroContrato;
+//        }
+//    }
+
+
 
     @Override
     public void rescindirContrato() {

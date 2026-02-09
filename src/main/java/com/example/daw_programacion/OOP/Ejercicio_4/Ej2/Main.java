@@ -2,10 +2,10 @@ package com.example.daw_programacion.OOP.Ejercicio_4.Ej2;
 
 public class Main {
     public static void main(String[] args) {
+        Vehiculo v1 = new Vehiculo("Hyundai");
         Coche coche = new Coche("Kia", 4);
         Moto moto = new Moto("Nissan", false);
         Camion camion = new Camion("Benz", 32);
-        Vehiculo v1 = new Vehiculo("Hyundai");
 
 
         //overriding

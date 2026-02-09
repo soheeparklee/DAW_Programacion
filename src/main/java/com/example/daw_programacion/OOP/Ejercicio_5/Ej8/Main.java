@@ -25,19 +25,16 @@ public class Main {
         printableList.add(pdf3);
         printableList.add(factura);
 
+
         for (Imprimible imprimible : printableList) {
+            //if(imprimible instanceof PDF p){
+                //p.imprimirPDF();
             if(imprimible instanceof PDF){
-                imprimible.imprimir();
+                    PDF pdf = (PDF) imprimible;
+                    pdf.imprimir();
             }else if(imprimible instanceof Factura){
-                imprimible.imprimir();
+                    imprimible.imprimir();
             }
         }
-
-
-
-
-
-
-
     }
 }

@@ -4,6 +4,9 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Collections;
+
+import static java.util.Collections.*;
 
 public class Version2Main {
     public static void main(String[] args) {
@@ -87,6 +90,11 @@ public class Version2Main {
         System.out.println(c3.getSalario());
 
 
+        System.out.println("============");
+        Collections.sort(contratoList, new SalaryComparator());
+        for (Contrato contrato : contratoList) {
+            System.out.println(contrato.monstrarContrato());
+        }
 
 
     }

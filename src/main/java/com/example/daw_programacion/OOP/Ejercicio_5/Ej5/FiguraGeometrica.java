@@ -5,4 +5,6 @@ public abstract class FiguraGeometrica {
     double calcularArea() {
         return 0;
     }
+
+    //double abstract calcularAreaAbstract() {};
 }

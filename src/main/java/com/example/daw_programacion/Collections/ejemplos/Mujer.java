@@ -1,4 +1,4 @@
-package com.example.daw_programacion.Collections;
+package com.example.daw_programacion.Collections.ejemplos;
 
 public class Mujer {
     private String nombre;
