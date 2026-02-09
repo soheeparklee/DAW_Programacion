@@ -6,8 +6,8 @@ import java.util.Objects;
 
 public class Persona {
     private String firstName;
-    private String lastName;
     private Integer year;
+    private String lastName;
 
     public Persona(String firstName, String lastName, Integer year) {
         this.firstName = firstName;
