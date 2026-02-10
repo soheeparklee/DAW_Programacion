@@ -1,10 +1,18 @@
 package com.example.daw_programacion.Collections.ejercicioFeb.Ej4;
 
+import com.example.daw_programacion.Iterator.Person;
+
 import java.lang.reflect.Array;
 import java.time.LocalDate;
 import java.util.*;
 
 public class Main {
+    public static void recorrirList(List<Persona> list){
+        for (Persona persona : list) {
+            System.out.println(persona.toString());
+        }
+    }
+
     public static void main(String[] args) {
         Persona p1 = new Persona("Elena", "García Romero", 2005);
         Persona p2 = new Persona("María", "López Torres", 1985);
@@ -45,8 +53,8 @@ public class Main {
 
         recorrirList(list);
 
-        //Reemplazo
         System.out.println("===========Reemplazo=============");
+        //Reemplazo
         Persona sustituir = new Persona("Miguel", "Ramírez Torres", 2003);
         list.remove(2);
         list.add(2, sustituir);
@@ -110,11 +118,5 @@ public class Main {
         //
         System.out.println("========================");
 
-    }
-
-    public static void recorrirList(List<Persona> list){
-        for (Persona persona : list) {
-            System.out.println(persona.toString());
-        }
     }
 }
