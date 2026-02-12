@@ -14,8 +14,8 @@ public class CuentaDeAhorro extends Cuenta{
 
 
     @Override
-    void retriarDinero(double retirarAmount) throws SaldoNegativo{
-        if(super.getSaldo() >= retirarAmount){
+    public void retriarDinero(double retirarAmount) throws SaldoNegativo{
+        if(this.getSaldo() >= retirarAmount){
             super.setSaldo(super.getSaldo()-retirarAmount);
             System.out.println("Dinero retirado en cuenta de ahorro con exito. Tu saldo es: " + super.getSaldo());
         }else{

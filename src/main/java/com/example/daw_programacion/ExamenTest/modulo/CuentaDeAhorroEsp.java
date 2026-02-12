@@ -15,7 +15,7 @@ public class CuentaDeAhorroEsp extends CuentaDeAhorro{
     }
 
     @Override
-    void retriarDinero(double retirarAmount) throws SaldoNegativo{
+    public void retriarDinero(double retirarAmount) throws SaldoNegativo{
         double conPenalizacion = retirarAmount * (1 + ((double) this.penalizacion / 100));
         if(super.getSaldo() >= conPenalizacion){
             super.setSaldo(super.getSaldo() - conPenalizacion);

@@ -37,11 +37,11 @@ public abstract class Cuenta implements Comparable<Cuenta>{
         return numeroDeCuenta;
     }
 
-    void ingresarDinero(double ingresarAmount){
+    public void ingresarDinero(double ingresarAmount){
         saldo += ingresarAmount;
         System.out.println("Saldo ingresado: " + saldo);
     }
-    abstract void retriarDinero(double retirarAmount) throws SaldoNegativo;
+    public abstract void retriarDinero(double retirarAmount) throws SaldoNegativo;
 
     //Poner un saldo en cada una de ellas controlando que cuando introduzcas el
     //saldo este no sea negativo. Insertar las cuentas en el banco.

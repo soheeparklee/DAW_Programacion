@@ -1,6 +1,10 @@
-package com.example.daw_programacion.ExamenTest.modulo;
+package com.example.daw_programacion.ExamenTest;
 
 import com.example.daw_programacion.ExamenTest.excepciones.SaldoNegativo;
+import com.example.daw_programacion.ExamenTest.modulo.Cuenta;
+import com.example.daw_programacion.ExamenTest.modulo.CuentaCorriente;
+import com.example.daw_programacion.ExamenTest.modulo.CuentaDeAhorro;
+import com.example.daw_programacion.ExamenTest.modulo.CuentaDeAhorroEsp;
 
 import java.util.*;
 

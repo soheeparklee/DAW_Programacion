@@ -12,7 +12,7 @@ public class CuentaCorriente extends Cuenta{
 
 
     @Override
-    void retriarDinero(double retirarAmount) throws SaldoNegativo {
+    public void retriarDinero(double retirarAmount) throws SaldoNegativo {
         if(super.getSaldo() >= retirarAmount){
             super.setSaldo(super.getSaldo()-retirarAmount);
             System.out.println("Dinero retirar en cuenta corriente con exito. Saldo: " + super.getSaldo());
