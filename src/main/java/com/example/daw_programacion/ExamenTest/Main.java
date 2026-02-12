@@ -1,10 +1,7 @@
 package com.example.daw_programacion.ExamenTest;
 
 import com.example.daw_programacion.ExamenTest.excepciones.SaldoNegativo;
-import com.example.daw_programacion.ExamenTest.modulo.Cuenta;
-import com.example.daw_programacion.ExamenTest.modulo.CuentaCorriente;
-import com.example.daw_programacion.ExamenTest.modulo.CuentaDeAhorro;
-import com.example.daw_programacion.ExamenTest.modulo.CuentaDeAhorroEsp;
+import com.example.daw_programacion.ExamenTest.modulo.*;
 
 import java.util.*;
 
@@ -27,27 +24,27 @@ public class Main {
         CuentaCorriente cuentaCorriente3 = new CuentaCorriente("B47534853",  6845, 800, cuentaDeAhorro3);
         CuentaCorriente cuentaCorriente4 = new CuentaCorriente("A98475389",  3859, -100000000, cuentaDeAhorro4);
 
-        HashSet<Cuenta> banco = new HashSet<>();
-        banco.add(cuentaDeAhorro1);
-        banco.add(cuentaCorriente1);
-        banco.add(ahorroEsp1);
-        banco.add(ahorroEsp2);
-        banco.add(cuentaDeAhorro2);
-        banco.add(cuentaDeAhorro3);
-        banco.add(cuentaDeAhorro4);
-        banco.add(cuentaCorriente2);
-        banco.add(cuentaCorriente3);
-        banco.add(cuentaCorriente4);
+        Banco banco = new Banco();
+        banco.addCuenta(cuentaDeAhorro1);
+        banco.addCuenta(cuentaCorriente1);
+        banco.addCuenta(ahorroEsp1);
+        banco.addCuenta(ahorroEsp2);
+        banco.addCuenta(cuentaDeAhorro2);
+        banco.addCuenta(cuentaDeAhorro3);
+        banco.addCuenta(cuentaDeAhorro4);
+        banco.addCuenta(cuentaCorriente2);
+        banco.addCuenta(cuentaCorriente3);
+        banco.addCuenta(cuentaCorriente4);
 
         //(2) Poner un saldo en cada una de ellas controlando que cuando introduzcas el saldo este no sea negativo
         // -> class Cuenta
 
         //(3) Mostrar información del total del saldo que se tiene en el banco
-        System.out.println("total del saldo en el banco: " + totalSaldo(banco));
+        System.out.println("total del saldo en el banco: " + banco.totalSaldo());
 
 
         //(3) la cuenta que tenga máxima penalización.
-        CuentaDeAhorroEsp cuentaEspMax = maxPenalización(banco);
+        CuentaDeAhorroEsp cuentaEspMax = banco.maxPenalización();
         System.out.println(cuentaEspMax);
 
         //(4) Pedir por pantalla un número de cuenta y pasar a extraer o añadir saldo.
@@ -58,7 +55,7 @@ public class Main {
             System.out.println("==============Entra un número de cuenta. Entra 0 para parar.================");
             input = Integer.parseInt(sc.nextLine());
             boolean cuentaFound = false;
-            for (Cuenta cuenta : banco) {
+            for (Cuenta cuenta : banco.getCuentaSet()) {
                 if(cuenta.getNumeroDeCuenta() == input){
                     cuentaFound = true;
                     System.out.println("======= Cuenta encontrado ======= " + cuenta.toString() + "=======");
@@ -93,7 +90,7 @@ public class Main {
         //Traspasar a un array de 5 posiciones las cuentas que tienen mayor cuantía
         //ordenando dicho array de menor a mayor cuantía en sus cuentas
         ArrayList<Cuenta> cuentaList = new ArrayList<>();
-        for (Cuenta cuenta : banco) {
+        for (Cuenta cuenta : banco.getCuentaSet()) {
             cuentaList.add(cuenta);
         }
         Collections.sort(cuentaList);
@@ -104,28 +101,6 @@ public class Main {
 
     }
 
-    public static double totalSaldo(HashSet<Cuenta> banco){
-        double saldoTotal = 0;
-        for (Cuenta cuenta : banco) {
-            if(cuenta instanceof CuentaCorriente){
-                saldoTotal += cuenta.getSaldo();
-            }
-        }
-        return saldoTotal;
-    }
 
-    public static CuentaDeAhorroEsp maxPenalización(HashSet<Cuenta> banco){
-        int maxPen = 0;
-        CuentaDeAhorroEsp cuentaEsp = new CuentaDeAhorroEsp("", 0, 0, 0, 0);
-        for (Cuenta cuenta : banco) {
-            if(cuenta instanceof CuentaDeAhorroEsp){
-                if(((CuentaDeAhorroEsp) cuenta).getPenalizacion() > maxPen){
-                    maxPen = ((CuentaDeAhorroEsp) cuenta).getPenalizacion();
-                    cuentaEsp = (CuentaDeAhorroEsp) cuenta;
-                }
-            }
-        }
-        return cuentaEsp;
-    }
 
 }
